@@ -19,7 +19,7 @@ const MainNav = () => {
             <img 
               src="/lovable-uploads/95daeee5-cc9b-4dc9-bf2e-573c12292bef.png" 
               alt="Flooring Quotes Vancouver" 
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </Link>
           
