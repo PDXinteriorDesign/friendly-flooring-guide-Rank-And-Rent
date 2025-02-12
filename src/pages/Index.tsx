@@ -1,3 +1,4 @@
+
 import { MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -43,7 +44,7 @@ const Index = () => {
       <section className="section-padding bg-earth-100">
         <div className="container-custom">
           <div className="text-center mb-16 animate-fade-up">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Services</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Popular Services</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               From hardwood to luxury vinyl, we provide expert installation and care for all your flooring needs
             </p>
