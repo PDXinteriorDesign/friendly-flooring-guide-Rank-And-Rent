@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import HardwoodFlooring from "./pages/HardwoodFlooring";
 import VinylFlooring from "./pages/VinylFlooring";
 import CarpetFlooring from "./pages/CarpetFlooring";
+import Blog from "./pages/Blog";
+import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/hardwood-flooring-vancouver-wa" element={<HardwoodFlooring />} />
           <Route path="/vinyl-flooring-vancouver-wa" element={<VinylFlooring />} />
           <Route path="/carpet-installation-vancouver-wa" element={<CarpetFlooring />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/resources" element={<Resources />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
