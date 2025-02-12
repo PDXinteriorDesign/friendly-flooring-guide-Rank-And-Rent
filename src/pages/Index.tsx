@@ -1,7 +1,12 @@
-
 import { MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const Index = () => {
   return (
@@ -84,6 +89,29 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="section-padding bg-earth-100">
+        <div className="container-custom">
+          <div className="text-center mb-16 animate-fade-up">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Get answers to common questions about our flooring services and installation process
+            </p>
+          </div>
+          
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
+                  <AccordionContent>{faq.answer}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="section-padding bg-wood-100">
         <div className="container-custom">
@@ -151,6 +179,41 @@ const benefits = [
     title: "Transparent Pricing",
     description: "Honest, upfront quotes with no hidden fees or surprises.",
   },
+];
+
+const faqs = [
+  {
+    question: "How long does flooring installation typically take?",
+    answer: "Installation time varies depending on the type of flooring and room size. A standard room (250-300 sq ft) typically takes 1-2 days for hardwood, 1 day for vinyl, and 1 day for carpet installation. We'll provide a specific timeline during your consultation."
+  },
+  {
+    question: "Do you offer free estimates?",
+    answer: "Yes! We provide free, no-obligation estimates for all our flooring services in Vancouver, WA and surrounding areas. Our expert will measure your space, discuss your preferences, and provide a detailed quote."
+  },
+  {
+    question: "What brands of flooring do you carry?",
+    answer: "We work with top industry manufacturers to provide high-quality flooring options including Shaw, Mohawk, Armstrong, and many others. We can help you select the best product that fits your style and budget."
+  },
+  {
+    question: "Do you handle furniture moving during installation?",
+    answer: "Yes, we offer furniture moving services as part of our installation process. Our team will carefully move your furniture before installation and return it afterward. Heavy or specialty items may require additional arrangements."
+  },
+  {
+    question: "What kind of warranty do you offer?",
+    answer: "We offer manufacturer warranties on all products plus our own labor warranty. Specific warranty terms vary by product, but typically range from 15-25 years for materials and 2 years for installation labor."
+  },
+  {
+    question: "How should I prepare my home for installation?",
+    answer: "Remove small items and valuables from the installation area, ensure clear access to the space, and maintain room temperature between 65-75°F for 48 hours before installation. We'll provide detailed preparation instructions before your installation date."
+  },
+  {
+    question: "Do you offer financing options?",
+    answer: "Yes, we offer various financing options to help make your flooring project affordable. We work with several financing partners and can help you find the best payment plan for your budget."
+  },
+  {
+    question: "How soon can you start my project?",
+    answer: "Typically, we can schedule your installation within 1-2 weeks after your product selection and measurement appointment. Emergency services may be available for urgent situations."
+  }
 ];
 
 export default Index;
