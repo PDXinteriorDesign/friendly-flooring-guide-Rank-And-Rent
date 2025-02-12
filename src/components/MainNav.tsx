@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { Layers, Grid, Mountain, Window } from "lucide-react";
+import { Layers, Grid, Mountain, Blinds } from "lucide-react";
 
 const MainNav = () => {
   return (
@@ -63,7 +63,7 @@ const MainNav = () => {
                   </Link>
                   <Link to="/window-coverings-vancouver-wa" className="block p-3 space-y-1 hover:bg-accent rounded-lg">
                     <div className="flex items-center gap-2 font-medium">
-                      <Window className="w-4 h-4" />
+                      <Blinds className="w-4 h-4" />
                       Window Coverings
                     </div>
                     <p className="text-sm text-muted-foreground">Custom window treatment solutions</p>
