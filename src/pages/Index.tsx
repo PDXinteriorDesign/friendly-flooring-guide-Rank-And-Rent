@@ -1,14 +1,156 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+            alt="Beautiful flooring installation"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        <div className="container-custom relative z-10 text-white">
+          <div className="max-w-3xl mx-auto text-center animate-fade-up">
+            <span className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-sm mb-6">
+              Serving Vancouver, WA & Clark County
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+              Transform Your Space with Expert Flooring Solutions
+            </h1>
+            <p className="text-lg sm:text-xl mb-8 text-white/90">
+              Family-owned, locally operated, and committed to bringing your vision to life
+            </p>
+            <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+              Get Your Free Quote
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="section-padding bg-earth-100">
+        <div className="container-custom">
+          <div className="text-center mb-16 animate-fade-up">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Services</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              From hardwood to luxury vinyl, we provide expert installation and care for all your flooring needs
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow animate-fade-up">
+                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <p className="text-muted-foreground mb-4">{service.description}</p>
+                <Button variant="outline" className="w-full">Learn More</Button>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-up">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Choose Us?</h2>
+              <div className="space-y-6">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex gap-4">
+                    <CheckCircle2 className="w-6 h-6 text-wood-500 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-semibold mb-2">{benefit.title}</h3>
+                      <p className="text-muted-foreground">{benefit.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative h-[500px] animate-fade-up">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                alt="Our team at work"
+                className="rounded-lg object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="section-padding bg-wood-100">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center animate-fade-up">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Contact us today for a free consultation and quote. We're here to help bring your vision to life.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-6 mb-8">
+              <a href="tel:+1234567890" className="flex flex-col items-center p-6 glass-card rounded-lg">
+                <Phone className="w-6 h-6 mb-3 text-wood-500" />
+                <span className="font-semibold">Call Us</span>
+                <span className="text-sm text-muted-foreground">(123) 456-7890</span>
+              </a>
+              <a href="mailto:info@example.com" className="flex flex-col items-center p-6 glass-card rounded-lg">
+                <Mail className="w-6 h-6 mb-3 text-wood-500" />
+                <span className="font-semibold">Email Us</span>
+                <span className="text-sm text-muted-foreground">info@example.com</span>
+              </a>
+              <div className="flex flex-col items-center p-6 glass-card rounded-lg">
+                <MapPin className="w-6 h-6 mb-3 text-wood-500" />
+                <span className="font-semibold">Visit Us</span>
+                <span className="text-sm text-muted-foreground">Vancouver, WA</span>
+              </div>
+            </div>
+            <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+              Request a Quote
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
+
+const services = [
+  {
+    title: "Hardwood Flooring",
+    description: "Premium hardwood installation and refinishing services for a timeless, elegant look.",
+  },
+  {
+    title: "Luxury Vinyl",
+    description: "Durable, water-resistant flooring perfect for any room in your home.",
+  },
+  {
+    title: "Laminate Flooring",
+    description: "Cost-effective solutions that don't compromise on style or durability.",
+  },
+];
+
+const benefits = [
+  {
+    title: "Local Expertise",
+    description: "Deep understanding of Vancouver's climate and housing styles.",
+  },
+  {
+    title: "Family-Owned Business",
+    description: "Personalized service and attention to detail on every project.",
+  },
+  {
+    title: "Quality Guaranteed",
+    description: "Premium materials and expert installation backed by our satisfaction guarantee.",
+  },
+  {
+    title: "Transparent Pricing",
+    description: "Honest, upfront quotes with no hidden fees or surprises.",
+  },
+];
 
 export default Index;
