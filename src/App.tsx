@@ -36,4 +36,12 @@ const App = () => (
           <Route path="/natural-stone-vancouver-wa" element={<NaturalStone />} />
           <Route path="/window-coverings-vancouver-wa" element={<WindowCoverings />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/resources" element={
+          <Route path="/resources" element={<Resources />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
