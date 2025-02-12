@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -14,15 +15,15 @@ const MainNav = () => {
     <div className="bg-white shadow-sm relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link to="/" className="py-2">
+          <Link to="/" className="py-1">
             <img 
               src="/lovable-uploads/95daeee5-cc9b-4dc9-bf2e-573c12292bef.png" 
               alt="Flooring Quotes Vancouver" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
           
-          <NavigationMenu className="py-4">
+          <NavigationMenu className="py-2">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <Link to="/" className={cn(
