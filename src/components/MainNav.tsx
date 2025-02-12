@@ -15,11 +15,11 @@ const MainNav = () => {
     <div className="bg-white shadow-sm relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link to="/" className="py-1">
+          <Link to="/" className="py-2 h-full">
             <img 
               src="/lovable-uploads/40ee1fa8-0e9e-417b-acb9-6f62c412e409.png" 
               alt="Flooring Quotes Vancouver" 
-              className="h-28 w-auto"
+              className="h-full max-h-32 w-auto object-contain"
             />
           </Link>
           
