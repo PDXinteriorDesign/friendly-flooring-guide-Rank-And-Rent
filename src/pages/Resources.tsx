@@ -2,7 +2,7 @@
 import { Helmet } from "react-helmet";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, FileText, Video, Tool } from "lucide-react";
+import { Download, FileText, Video } from "lucide-react";
 
 const Resources = () => {
   return (
@@ -71,7 +71,7 @@ const Resources = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tools.map((tool, index) => (
               <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <Tool className="h-12 w-12 text-wood-500 mb-4" />
+                <FileText className="h-12 w-12 text-wood-500 mb-4" />
                 <h3 className="text-xl font-semibold mb-2">{tool.title}</h3>
                 <p className="text-muted-foreground mb-4">{tool.description}</p>
                 <Button variant="outline" className="w-full">Use Tool</Button>
