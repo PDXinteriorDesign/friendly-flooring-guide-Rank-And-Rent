@@ -24,6 +24,11 @@ const Index = () => {
         </div>
         <div className="container-custom relative z-10 text-white">
           <div className="max-w-3xl mx-auto text-center animate-fade-up">
+            <img 
+              src="/lovable-uploads/0806939a-25e5-4dce-9a7e-c926ce792d11.png" 
+              alt="Flooring Quotes Vancouver"
+              className="w-64 mx-auto mb-8"
+            />
             <span className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-sm mb-6">
               Serving Vancouver, WA & Clark County
             </span>
