@@ -12,7 +12,7 @@ import { Layers, Grid, Mountain, Blinds } from "lucide-react";
 
 const MainNav = () => {
   return (
-    <div className="bg-white shadow-sm">
+    <div className="bg-white shadow-sm relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <NavigationMenu className="py-4">
           <NavigationMenuList>
@@ -26,7 +26,7 @@ const MainNav = () => {
 
             <NavigationMenuItem>
               <NavigationMenuTrigger>Flooring Services</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="bg-white/95 backdrop-blur-sm shadow-lg">
                 <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                   <Link to="/hardwood-flooring-vancouver-wa" className="block p-3 space-y-1 hover:bg-accent rounded-lg">
                     <div className="font-medium">Hardwood Flooring</div>
