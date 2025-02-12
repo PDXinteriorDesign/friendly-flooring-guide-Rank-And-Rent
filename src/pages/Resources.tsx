@@ -1,152 +1,154 @@
 
 import { Helmet } from "react-helmet";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Download, FileText, Video } from "lucide-react";
+import { FileText } from "lucide-react";
 
 const Resources = () => {
   return (
     <>
       <Helmet>
-        <title>Flooring Resources & Guides | Vancouver WA Flooring Information</title>
-        <meta name="description" content="Access our comprehensive flooring resources, including guides, maintenance tips, and installation information for hardwood, vinyl, and carpet flooring in Vancouver WA." />
-        <meta name="keywords" content="flooring resources, flooring guides, flooring maintenance, flooring installation guide, Vancouver WA flooring" />
+        <title>Flooring Maintenance Guides | Vancouver WA Flooring Care</title>
+        <meta name="description" content="Comprehensive flooring maintenance guides for hardwood, vinyl, and carpet flooring. Learn how to properly care for and maintain your floors in Vancouver WA." />
+        <meta name="keywords" content="flooring maintenance, floor care guide, hardwood maintenance, vinyl floor care, carpet care, Vancouver WA flooring" />
       </Helmet>
 
       <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Flooring Resources</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Flooring Maintenance Guides</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Access our comprehensive collection of flooring guides, maintenance tips, and installation resources.
+            Learn how to properly care for and maintain your flooring to ensure its longevity and beauty.
           </p>
         </div>
 
-        {/* Guides Section */}
-        <div className="max-w-7xl mx-auto mb-16">
-          <h2 className="text-2xl font-bold mb-8">Installation Guides</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {guides.map((guide, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <FileText className="h-12 w-12 text-wood-500 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{guide.title}</h3>
-                <p className="text-muted-foreground mb-4">{guide.description}</p>
-                <Button variant="outline" className="w-full">
-                  <Download className="mr-2 h-4 w-4" /> Download Guide
-                </Button>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Video Tutorials */}
-        <div className="max-w-7xl mx-auto mb-16">
-          <h2 className="text-2xl font-bold mb-8">Video Tutorials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {tutorials.map((tutorial, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative">
-                  <img 
-                    src={tutorial.thumbnail} 
-                    alt={tutorial.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                    <Video className="h-16 w-16 text-white" />
-                  </div>
+        {/* Maintenance Guides */}
+        {maintenanceGuides.map((guide, index) => (
+          <section key={index} className="max-w-4xl mx-auto mb-16">
+            <Card className="p-8">
+              <div className="flex items-start gap-4 mb-6">
+                <FileText className="h-8 w-8 text-wood-500 flex-shrink-0 mt-1" />
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">{guide.title}</h2>
+                  <p className="text-muted-foreground mb-6">{guide.description}</p>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{tutorial.title}</h3>
-                  <p className="text-muted-foreground mb-4">{tutorial.description}</p>
-                  <Button variant="outline" className="w-full">Watch Tutorial</Button>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
+              </div>
+              
+              {/* Daily Care */}
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-3">Daily Care</h3>
+                <ul className="space-y-3">
+                  {guide.dailyCare.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="font-medium text-wood-500">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-        {/* Tools Section */}
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold mb-8">Helpful Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {tools.map((tool, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                <FileText className="h-12 w-12 text-wood-500 mb-4" />
-                <h3 className="text-xl font-semibold mb-2">{tool.title}</h3>
-                <p className="text-muted-foreground mb-4">{tool.description}</p>
-                <Button variant="outline" className="w-full">Use Tool</Button>
-              </Card>
-            ))}
-          </div>
-        </div>
+              {/* Regular Maintenance */}
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold mb-3">Regular Maintenance</h3>
+                <ul className="space-y-3">
+                  {guide.regularMaintenance.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="font-medium text-wood-500">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Prevention Tips */}
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Prevention Tips</h3>
+                <ul className="space-y-3">
+                  {guide.preventionTips.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="font-medium text-wood-500">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Card>
+          </section>
+        ))}
       </div>
     </>
   );
 };
 
-const guides = [
+const maintenanceGuides = [
   {
-    title: "Hardwood Floor Installation Guide",
-    description: "Step-by-step instructions for installing hardwood flooring in your home.",
+    title: "Hardwood Floor Maintenance",
+    description: "Keep your hardwood floors looking beautiful for years to come with these essential care instructions.",
+    dailyCare: [
+      "Sweep or vacuum regularly to remove dust and debris",
+      "Clean spills immediately with a slightly damp cloth",
+      "Use only cleaning products specifically designed for hardwood floors",
+      "Avoid wet mopping as excess water can damage wood"
+    ],
+    regularMaintenance: [
+      "Clean with a professional hardwood floor cleaner monthly",
+      "Reapply wood floor polish every 2-3 months",
+      "Check for signs of wear or damage regularly",
+      "Professional deep cleaning recommended annually"
+    ],
+    preventionTips: [
+      "Use furniture pads under all furniture legs",
+      "Place mats at all exterior doors to catch dirt and moisture",
+      "Keep pet nails trimmed to prevent scratches",
+      "Maintain consistent indoor humidity levels (35-55%)",
+      "Avoid wearing high heels or sports cleats on hardwood floors"
+    ]
   },
   {
-    title: "Vinyl Flooring Installation Guide",
-    description: "Complete guide to installing luxury vinyl plank and sheet vinyl flooring.",
+    title: "Vinyl Flooring Care Guide",
+    description: "Maintain the appearance and durability of your vinyl flooring with these proper care techniques.",
+    dailyCare: [
+      "Sweep or vacuum with a soft brush attachment daily",
+      "Wipe up spills promptly to prevent staining",
+      "Use a damp mop with warm water for regular cleaning",
+      "Avoid abrasive cleaners that can scratch the surface"
+    ],
+    regularMaintenance: [
+      "Deep clean with approved vinyl floor cleaner monthly",
+      "Check for loose edges or seams regularly",
+      "Inspect for any signs of water damage or lifting",
+      "Professional cleaning recommended every 12-18 months"
+    ],
+    preventionTips: [
+      "Use protective mats at entrances and heavy traffic areas",
+      "Install furniture protectors under heavy items",
+      "Avoid rolling heavy appliances directly on the floor",
+      "Protect from direct sunlight to prevent fading",
+      "Clean up spills immediately to prevent slipping hazards"
+    ]
   },
   {
-    title: "Carpet Installation Guide",
-    description: "Professional tips for carpet installation and preparation.",
-  },
-  {
-    title: "Floor Maintenance Guide",
-    description: "Learn how to properly maintain different types of flooring.",
-  },
-  {
-    title: "Subfloor Preparation Guide",
-    description: "Essential steps for preparing your subfloor for new flooring.",
-  },
-  {
-    title: "Flooring Selection Guide",
-    description: "How to choose the right flooring type for each room.",
-  },
-];
-
-const tutorials = [
-  {
-    title: "Hardwood Floor Installation Tutorial",
-    description: "Watch our expert installers demonstrate proper hardwood installation techniques.",
-    thumbnail: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-  },
-  {
-    title: "Vinyl Flooring Installation Tips",
-    description: "Learn professional tips for installing vinyl flooring in your home.",
-    thumbnail: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d",
-  },
-  {
-    title: "Carpet Installation Basics",
-    description: "Understanding the fundamentals of proper carpet installation.",
-    thumbnail: "https://images.unsplash.com/photo-1582562124811-c09040d0a901",
-  },
-  {
-    title: "Floor Maintenance Tutorial",
-    description: "Learn how to maintain and clean different types of flooring.",
-    thumbnail: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-  },
-];
-
-const tools = [
-  {
-    title: "Flooring Calculator",
-    description: "Calculate the amount of flooring needed for your project.",
-  },
-  {
-    title: "Cost Estimator",
-    description: "Get an estimate for your flooring project based on your requirements.",
-  },
-  {
-    title: "Material Comparison Tool",
-    description: "Compare different flooring materials and their properties.",
-  },
+    title: "Carpet Care and Maintenance",
+    description: "Extend the life of your carpet and maintain its appearance with these essential care guidelines.",
+    dailyCare: [
+      "Vacuum high-traffic areas daily",
+      "Blot spills immediately - never rub or scrub",
+      "Remove small debris promptly to prevent matting",
+      "Use doormats to reduce dirt tracked onto carpeting"
+    ],
+    regularMaintenance: [
+      "Deep vacuum entire carpet area weekly",
+      "Professionally clean every 12-18 months",
+      "Rotate furniture periodically to prevent wear patterns",
+      "Spot clean stains using appropriate carpet cleaners"
+    ],
+    preventionTips: [
+      "Remove shoes when possible to reduce dirt and wear",
+      "Keep a carpet cleaning kit ready for emergencies",
+      "Use carpet protector sprays in high-traffic areas",
+      "Maintain proper indoor humidity to prevent mold",
+      "Consider professional scotchgard treatment annually"
+    ]
+  }
 ];
 
 export default Resources;
