@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -9,34 +8,40 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { Layers, Grid, Mountain, Blinds } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const MainNav = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className="bg-earth-100 shadow-sm relative z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="py-2 h-full">
             <img 
               src="/lovable-uploads/e7a6c80e-7321-4810-82d4-aa0d06900765.png" 
               alt="Flooring Quotes Vancouver" 
-              className="h-full max-h-32 w-auto object-contain"
+              className="h-full max-h-24 sm:max-h-32 w-auto object-contain"
             />
           </Link>
           
           <NavigationMenu className="py-2">
-            <NavigationMenuList>
+            <NavigationMenuList className="gap-1 sm:gap-2">
               <NavigationMenuItem>
                 <Link to="/" className={cn(
-                  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-2 sm:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 )}>
                   Home
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Flooring Services</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="px-2 sm:px-4">Flooring Services</NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-earth-100/95 backdrop-blur-sm shadow-lg">
-                  <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                  <div className={cn(
+                    "grid gap-3 p-4",
+                    isMobile ? "w-[280px] grid-cols-1" : "w-[500px] md:grid-cols-2"
+                  )}>
                     <Link to="/hardwood-flooring-vancouver-wa" className="block p-3 space-y-1 hover:bg-accent rounded-lg">
                       <div className="font-medium">Hardwood Flooring</div>
                       <p className="text-sm text-muted-foreground">Professional hardwood floor installation and refinishing</p>
@@ -83,7 +88,7 @@ const MainNav = () => {
 
               <NavigationMenuItem>
                 <Link to="/blog" className={cn(
-                  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-2 sm:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 )}>
                   Blog
                 </Link>
@@ -91,7 +96,7 @@ const MainNav = () => {
 
               <NavigationMenuItem>
                 <Link to="/resources" className={cn(
-                  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                  "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-2 sm:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 )}>
                   Resources
                 </Link>
