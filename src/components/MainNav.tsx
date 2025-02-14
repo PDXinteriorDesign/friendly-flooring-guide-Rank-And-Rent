@@ -17,7 +17,7 @@ const MainNav = () => {
   return (
     <div className="relative z-50 shadow-sm" 
       style={{
-        backgroundImage: `url('/lovable-uploads/a374408f-c8e4-43f5-b39f-dc3194e11b64.png')`,
+        backgroundImage: `url('/lovable-uploads/97bc7151-172f-486b-98db-d006004f6c43.png')`,
         backgroundSize: '300px',
         backgroundRepeat: 'repeat',
       }}
