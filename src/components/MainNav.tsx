@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -19,7 +20,7 @@ const MainNav = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="py-2 h-full">
             <img 
-              src="/lovable-uploads/0054344d-5017-45a7-9f1e-484e768fb1dc.png" 
+              src="/lovable-uploads/233d3ab3-a336-46d6-b895-3dcdf5b688cd.png" 
               alt="Flooring Quotes Vancouver" 
               className="h-full max-h-32 sm:max-h-40 w-auto object-contain"
             />
