@@ -33,7 +33,7 @@ const Index = () => {
             <p className="text-lg sm:text-xl mb-8 text-white/90">
               Family-owned, locally operated, and committed to bringing your vision to life
             </p>
-            <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+            <Button size="lg" className="bg-[#b3cbb5] hover:bg-[#95ad97] text-white">
               Get Your Free Quote
             </Button>
           </div>
