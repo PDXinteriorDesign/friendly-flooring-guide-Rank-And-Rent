@@ -16,8 +16,8 @@ const Index = () => {
       <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-            alt="Beautiful flooring installation"
+            src="/lovable-uploads/82890074-55b4-40d9-9847-c0cd48258d50.png"
+            alt="Elegant entryway featuring custom hardwood chevron flooring and decorative tile inlay"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
