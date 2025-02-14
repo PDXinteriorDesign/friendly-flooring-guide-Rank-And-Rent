@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -14,8 +15,15 @@ const MainNav = () => {
   const isMobile = useIsMobile();
 
   return (
-    <div className="bg-earth-100 shadow-sm relative z-50">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div className="relative z-50 shadow-sm" 
+      style={{
+        backgroundImage: `url('/lovable-uploads/a374408f-c8e4-43f5-b39f-dc3194e11b64.png')`,
+        backgroundSize: '300px',
+        backgroundRepeat: 'repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-earth-100/90 backdrop-blur-[2px]"></div>
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 relative">
         <div className="flex items-center justify-between">
           <Link to="/" className="py-2 h-full">
             <img 
