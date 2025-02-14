@@ -27,7 +27,7 @@ const MainNav = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="py-2 h-full">
             <img 
-              src="/lovable-uploads/e7a6c80e-7321-4810-82d4-aa0d06900765.png" 
+              src="/lovable-uploads/dc5cfa2d-fae3-4422-a23e-f66df1d9a875.png" 
               alt="Flooring Quotes Vancouver" 
               className="h-full max-h-24 sm:max-h-32 w-auto object-contain"
             />
