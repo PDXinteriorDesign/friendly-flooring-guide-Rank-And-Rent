@@ -19,8 +19,8 @@ const HardwoodFlooring = () => {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-              alt="Beautiful hardwood flooring installation in Vancouver"
+              src="/lovable-uploads/7832e803-7dac-4dd4-b1a8-4e65feea97e6.png"
+              alt="Professional hardwood flooring installation in progress showing light wood planks and leveling spacers"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
