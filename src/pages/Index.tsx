@@ -81,8 +81,8 @@ const Index = () => {
             </div>
             <div className="relative h-[500px] animate-fade-up">
               <img
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-                alt="Our team at work"
+                src="/lovable-uploads/abb299e5-c1cd-4330-b799-8d758ea07e2d.png"
+                alt="Professional flooring consultation with hardwood samples and project plans"
                 className="rounded-lg object-cover w-full h-full"
               />
             </div>
