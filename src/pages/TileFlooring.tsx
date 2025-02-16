@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -88,8 +87,8 @@ const TileFlooring = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-                  alt="Tile flooring installation"
+                  src="/lovable-uploads/3cfd1e9f-56b6-442c-aa57-809df348b965.png"
+                  alt="Various tile samples including marble, wood-look, and natural stone patterns showcasing design options"
                   className="w-full h-full object-cover"
                 />
               </div>
