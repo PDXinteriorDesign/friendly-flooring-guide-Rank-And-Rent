@@ -87,8 +87,8 @@ const WindowCoverings = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
-                  alt="Custom window treatments"
+                  src="/lovable-uploads/34f6cc41-2bb7-4553-bd88-ed9c043c479a.png"
+                  alt="Elegant sheer curtains filtering natural sunlight through a classic window frame, showcasing light control and privacy features in Vancouver WA"
                   className="w-full h-full object-cover"
                 />
               </div>
