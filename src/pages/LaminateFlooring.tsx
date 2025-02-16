@@ -87,8 +87,8 @@ const LaminateFlooring = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/04e56f0b-f0eb-4945-b9bc-7471dac5c5ce.png"
-                  alt="Close-up of light-colored laminate flooring showing detailed wood grain texture and clean installation"
+                  src="/lovable-uploads/a72f9a3c-7821-458d-afbf-eb71e54afa1d.png"
+                  alt="Premium gray laminate flooring with realistic wood grain pattern, showcasing professional installation and durable finish for Vancouver WA homes"
                   className="w-full h-full object-cover"
                 />
               </div>
