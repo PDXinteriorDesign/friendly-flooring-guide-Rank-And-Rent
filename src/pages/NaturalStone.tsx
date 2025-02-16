@@ -18,8 +18,8 @@ const NaturalStone = () => {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151"
-              alt="Luxury natural stone flooring"
+              src="/lovable-uploads/b2b0388e-d34b-4577-8444-a5f7bacd095d.png"
+              alt="Luxury kitchen with marble-look stone flooring, modern gray cabinets, and white countertops"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
