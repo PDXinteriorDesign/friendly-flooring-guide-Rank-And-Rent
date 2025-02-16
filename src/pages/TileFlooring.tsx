@@ -18,8 +18,8 @@ const TileFlooring = () => {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1496307653780-42ee777d4833"
-              alt="Professional tile flooring installation"
+              src="/lovable-uploads/8cca6a29-110d-47c4-a035-2befcffc5b02.png"
+              alt="Modern kitchen with elegant tile flooring, white cabinets, and granite countertops"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
