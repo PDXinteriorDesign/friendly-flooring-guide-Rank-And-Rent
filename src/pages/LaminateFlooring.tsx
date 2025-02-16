@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -88,8 +87,8 @@ const LaminateFlooring = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/fc46073d-5bcd-41ff-92a4-45370a8fa900.png"
-                  alt="Close-up of elegant laminate flooring with natural light casting dramatic shadows, showcasing the wood grain texture"
+                  src="/lovable-uploads/04e56f0b-f0eb-4945-b9bc-7471dac5c5ce.png"
+                  alt="Close-up of light-colored laminate flooring showing detailed wood grain texture and clean installation"
                   className="w-full h-full object-cover"
                 />
               </div>
