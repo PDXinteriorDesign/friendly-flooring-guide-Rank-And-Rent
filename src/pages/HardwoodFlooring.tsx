@@ -89,8 +89,8 @@ const HardwoodFlooring = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-                  alt="Hardwood flooring installation in progress"
+                  src="/lovable-uploads/d625c946-f85f-4cd4-96e8-002c9e311d62.png"
+                  alt="Flooring material samples including hardwood, marble, and natural stone showcasing our diverse selection"
                   className="w-full h-full object-cover"
                 />
               </div>
