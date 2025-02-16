@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -18,8 +17,8 @@ const WindowCoverings = () => {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1439337153520-7082a56a81f4"
-              alt="Modern window coverings"
+              src="/lovable-uploads/733e92bb-54e7-4de6-b1f8-431bb475f857.png"
+              alt="Elegant dining room showcasing custom window treatments with white sheer curtains, coffered ceiling, and hardwood flooring in Vancouver WA"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
