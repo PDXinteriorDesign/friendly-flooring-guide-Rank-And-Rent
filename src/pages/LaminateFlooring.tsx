@@ -18,8 +18,8 @@ const LaminateFlooring = () => {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d"
-              alt="Professional laminate flooring installation"
+              src="/lovable-uploads/d0672cde-d628-49b2-876e-ac03bc1ea08f.png"
+              alt="Modern living room with beautiful laminate flooring, featuring metal dining chairs and contemporary furniture"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
