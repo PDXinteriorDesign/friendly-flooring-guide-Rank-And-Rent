@@ -1,8 +1,8 @@
-
 import { MapPin, Phone, Mail, CheckCircle2, Star, Ruler, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -92,7 +92,9 @@ const Index = () => {
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow animate-fade-up">
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <Button variant="outline" className="w-full">Learn More</Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <Link to={service.link}>Learn More</Link>
+                  </Button>
                 </Card>
               ))}
             </div>
@@ -191,14 +193,17 @@ const services = [
   {
     title: "Hardwood Flooring",
     description: "Premium hardwood installation and refinishing services for a timeless, elegant look.",
+    link: "/hardwood-flooring"
   },
   {
     title: "Luxury Vinyl",
     description: "Durable, water-resistant flooring perfect for any room in your home.",
+    link: "/vinyl-flooring"
   },
   {
     title: "Laminate Flooring",
     description: "Cost-effective solutions that don't compromise on style or durability.",
+    link: "/laminate-flooring"
   },
 ];
 
