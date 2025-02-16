@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -89,8 +88,8 @@ const HardwoodFlooring = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="/lovable-uploads/d625c946-f85f-4cd4-96e8-002c9e311d62.png"
-                  alt="Flooring material samples including hardwood, marble, and natural stone showcasing our diverse selection"
+                  src="/lovable-uploads/394c320d-eec4-4d3f-ac10-86ecf03abf05.png"
+                  alt="Collection of hardwood flooring samples showcasing various wood tones and grain patterns"
                   className="w-full h-full object-cover"
                 />
               </div>
