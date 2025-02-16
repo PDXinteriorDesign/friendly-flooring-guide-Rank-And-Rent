@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -24,7 +23,6 @@ const MainNav = () => {
                 Flooring
                 <span className="text-primary/80">Quotes</span>
                 <span className="text-primary font-normal">Vancouver</span>
-                <span className="text-primary/70 text-sm">.com</span>
               </div>
             </div>
           </Link>
