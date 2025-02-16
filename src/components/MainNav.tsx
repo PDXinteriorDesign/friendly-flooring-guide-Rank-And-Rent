@@ -20,9 +20,11 @@ const MainNav = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="py-4">
             <div className="flex items-center gap-2">
-              <div className="text-primary font-bold text-2xl tracking-tight">
-                FLOORING
-                <span className="text-primary/80">PRO</span>
+              <div className="text-primary font-bold text-xl sm:text-2xl tracking-tight">
+                Flooring
+                <span className="text-primary/80">Quotes</span>
+                <span className="text-primary font-normal">Vancouver</span>
+                <span className="text-primary/70 text-sm">.com</span>
               </div>
             </div>
           </Link>
