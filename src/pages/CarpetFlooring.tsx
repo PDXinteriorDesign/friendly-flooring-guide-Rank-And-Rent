@@ -89,8 +89,8 @@ const CarpetFlooring = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901"
-                  alt="Carpet installation process"
+                  src="/lovable-uploads/532f4405-f7f0-4a24-9818-10fd610b1467.png"
+                  alt="Close-up of soft, comfortable carpet flooring with a relaxed person enjoying its plush texture"
                   className="w-full h-full object-cover"
                 />
               </div>
