@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -88,8 +87,8 @@ const NaturalStone = () => {
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151"
-                  alt="Natural stone flooring installation"
+                  src="/lovable-uploads/cebd4a71-d60b-42c1-9a4a-d7534b7d5645.png"
+                  alt="Elegant white marble stone tiles with natural veining patterns and textured surface"
                   className="w-full h-full object-cover"
                 />
               </div>
