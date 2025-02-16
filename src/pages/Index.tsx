@@ -122,23 +122,23 @@ const Index = () => {
               Contact us today for a free consultation and quote. We're here to help bring your vision to life.
             </p>
             <div className="grid sm:grid-cols-3 gap-6 mb-8">
-              <a href="tel:+1234567890" className="flex flex-col items-center p-6 glass-card rounded-lg">
-                <Phone className="w-6 h-6 mb-3 text-wood-500" />
+              <a href="tel:+1234567890" className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
+                <Phone className="w-6 h-6 mb-3" />
                 <span className="font-semibold">Call Us</span>
-                <span className="text-sm text-muted-foreground">(123) 456-7890</span>
+                <span className="text-sm opacity-90">(123) 456-7890</span>
               </a>
-              <a href="mailto:info@example.com" className="flex flex-col items-center p-6 glass-card rounded-lg">
-                <Mail className="w-6 h-6 mb-3 text-wood-500" />
+              <a href="mailto:info@example.com" className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
+                <Mail className="w-6 h-6 mb-3" />
                 <span className="font-semibold">Email Us</span>
-                <span className="text-sm text-muted-foreground">info@example.com</span>
+                <span className="text-sm opacity-90">info@example.com</span>
               </a>
-              <div className="flex flex-col items-center p-6 glass-card rounded-lg">
-                <MapPin className="w-6 h-6 mb-3 text-wood-500" />
+              <div className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground">
+                <MapPin className="w-6 h-6 mb-3" />
                 <span className="font-semibold">Visit Us</span>
-                <span className="text-sm text-muted-foreground">Vancouver, WA</span>
+                <span className="text-sm opacity-90">Vancouver, WA</span>
               </div>
             </div>
-            <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               Request a Quote
             </Button>
           </div>
