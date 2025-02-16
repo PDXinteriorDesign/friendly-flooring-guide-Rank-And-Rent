@@ -193,17 +193,17 @@ const services = [
   {
     title: "Hardwood Flooring",
     description: "Premium hardwood installation and refinishing services for a timeless, elegant look.",
-    link: "/hardwood-flooring"
+    link: "/hardwood-flooring-vancouver-wa"
   },
   {
     title: "Luxury Vinyl",
     description: "Durable, water-resistant flooring perfect for any room in your home.",
-    link: "/vinyl-flooring"
+    link: "/vinyl-flooring-vancouver-wa"
   },
   {
     title: "Laminate Flooring",
     description: "Cost-effective solutions that don't compromise on style or durability.",
-    link: "/laminate-flooring"
+    link: "/laminate-flooring-vancouver-wa"
   },
 ];
 
