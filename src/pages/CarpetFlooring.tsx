@@ -19,8 +19,8 @@ const CarpetFlooring = () => {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1582562124811-c09040d0a901"
-              alt="Professional carpet installation in Vancouver"
+              src="/lovable-uploads/887d956a-3a5e-4d38-aa6c-ce047e779c94.png"
+              alt="Modern bedroom with fresh carpet installation featuring elegant windows and palm leaf ceiling fan"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
