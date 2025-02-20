@@ -1,9 +1,9 @@
-
 import { Helmet } from "react-helmet";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => {
   return (
@@ -38,9 +38,11 @@ const Blog = () => {
                   <div className="text-sm text-muted-foreground mb-2">{post.date}</div>
                   <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
                   <p className="text-muted-foreground mb-4">{post.excerpt}</p>
-                  <Button variant="outline" className="w-full">
-                    Read More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <Link to={`/blog/${post.slug}`}>
+                    <Button variant="outline" className="w-full">
+                      Read More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </div>
               </Card>
             ))}
@@ -62,9 +64,11 @@ const Blog = () => {
                   <div className="text-sm text-muted-foreground mb-2">{post.date}</div>
                   <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
                   <p className="text-muted-foreground mb-4">{post.excerpt}</p>
-                  <Button variant="outline">
-                    Read More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <Link to={`/blog/${post.slug}`}>
+                    <Button variant="outline">
+                      Read More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </div>
               </Card>
             ))}
@@ -95,6 +99,7 @@ const Blog = () => {
 
 const featuredPosts = [
   {
+    slug: "are-vinyl-floors-waterproof",
     title: "Are Vinyl Floors Waterproof? Understanding Water-Resistant vs. Waterproof Vinyl",
     excerpt: "Discover the crucial differences between water-resistant and waterproof vinyl flooring, plus expert tips for choosing the right option for your space.",
     date: "March 15, 2024",
