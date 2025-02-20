@@ -95,8 +95,8 @@ const Blog = () => {
 
 const featuredPosts = [
   {
-    title: "2024 Flooring Trends You Need to Know",
-    excerpt: "Discover the latest flooring trends that are transforming homes in Vancouver WA.",
+    title: "Are Vinyl Floors Waterproof? Understanding Water-Resistant vs. Waterproof Vinyl",
+    excerpt: "Discover the crucial differences between water-resistant and waterproof vinyl flooring, plus expert tips for choosing the right option for your space.",
     date: "March 15, 2024",
     image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d",
   },
