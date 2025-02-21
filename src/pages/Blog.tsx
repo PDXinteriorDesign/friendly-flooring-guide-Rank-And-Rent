@@ -106,12 +106,14 @@ const featuredPosts = [
     image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d",
   },
   {
+    slug: "choosing-perfect-hardwood-floor",
     title: "How to Choose the Perfect Hardwood Floor",
     excerpt: "A comprehensive guide to selecting the right hardwood flooring for your home.",
     date: "March 10, 2024",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
   },
   {
+    slug: "vinyl-vs-hardwood-comparison",
     title: "Vinyl vs. Hardwood: Making the Right Choice",
     excerpt: "Compare the pros and cons of vinyl and hardwood flooring for your space.",
     date: "March 5, 2024",
@@ -121,24 +123,28 @@ const featuredPosts = [
 
 const recentPosts = [
   {
+    slug: "carpet-care-maintenance-tips",
     title: "Carpet Care: Essential Maintenance Tips",
     excerpt: "Learn how to keep your carpet looking fresh and clean with these expert tips.",
     date: "March 1, 2024",
     image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901",
   },
   {
+    slug: "eco-friendly-flooring-options",
     title: "Eco-Friendly Flooring Options",
     excerpt: "Discover sustainable flooring choices that look great and help the environment.",
     date: "February 25, 2024",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
   },
   {
+    slug: "diy-floor-maintenance-guide",
     title: "DIY Floor Maintenance Guide",
     excerpt: "Simple tips and tricks to maintain your floors and extend their lifespan.",
     date: "February 20, 2024",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
   },
   {
+    slug: "pet-friendly-flooring-solutions",
     title: "Pet-Friendly Flooring Solutions",
     excerpt: "Find the perfect flooring options that can withstand your furry friends.",
     date: "February 15, 2024",
