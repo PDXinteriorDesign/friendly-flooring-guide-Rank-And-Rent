@@ -3,10 +3,10 @@ export const post = {
   title: "Laminate vs. Vinyl Flooring – Which Is Better for Your Home?",
   excerpt: "Compare laminate and vinyl flooring options to find the perfect match for your home. Learn about durability, water resistance, and cost differences.",
   date: "March 5, 2024",
-  image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+  image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
   content: `
       <h2>What's the Difference Between Vinyl and Laminate Flooring?</h2>
-      <p>Both laminate and vinyl flooring offer affordable, stylish, and durable alternatives to hardwood and tile—but they aren't the same! Let's dive deep into their differences to help you make an informed decision.</p>
+      <p>Both <a href="/vinyl-flooring-vancouver-wa">vinyl</a> and <a href="/laminate-flooring-vancouver-wa">laminate flooring</a> offer affordable, stylish, and durable alternatives to hardwood and tile—but they aren't the same! Let's dive deep into their differences to help you make an informed decision.</p>
       
       <h2>Understanding the Construction</h2>
       <div class="mb-6">
@@ -50,6 +50,7 @@ export const post = {
 
       <h3>2. Water Resistance</h3>
       <div class="mb-6">
+        <p>One of the key differences between these materials is their water resistance. For more details about vinyl's waterproof capabilities, check out our guide on <a href="/blog/are-vinyl-floors-waterproof">waterproof vinyl flooring</a>.</p>
         <h4>Laminate Flooring</h4>
         <ul>
           <li>✔ Surface water resistance</li>
