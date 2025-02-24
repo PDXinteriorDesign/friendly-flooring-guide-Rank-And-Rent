@@ -103,7 +103,7 @@ const maintenanceGuides = [
     title: "Hardwood Floor Maintenance in Vancouver WA",
     description: "Keep your hardwood floors looking beautiful for years to come with these essential care instructions.",
     seoParagraph: "Living in the Pacific Northwest means your hardwood floors face unique challenges. Our maintenance guide helps local homeowners protect their floors from Vancouver's rain and humidity while preserving their beauty and value. Whether you're in Salmon Creek or downtown Vancouver, these tips will help your hardwood floors stay gorgeous through every season.",
-    serviceLink: "/hardwood-flooring",
+    serviceLink: "/hardwood-flooring-vancouver-wa",
     serviceLinkText: "Hardwood Flooring Services",
     dailyCare: [
       "Sweep or vacuum regularly to remove dust and debris",
@@ -129,7 +129,7 @@ const maintenanceGuides = [
     title: "Vinyl Flooring Care Guide for Vancouver Homes",
     description: "Maintain the appearance and durability of your vinyl flooring with these proper care techniques.",
     seoParagraph: "Modern vinyl flooring is a popular choice among local homeowners, and for good reason. It stands up beautifully to our Northwest weather while providing exceptional durability. From handling morning dew tracked in from Esther Short Park to managing winter moisture, these maintenance tips will help your vinyl floors look great year-round.",
-    serviceLink: "/vinyl-flooring",
+    serviceLink: "/vinyl-flooring-vancouver-wa",
     serviceLinkText: "Vinyl Flooring Services",
     dailyCare: [
       "Sweep or vacuum with a soft brush attachment daily",
@@ -155,7 +155,7 @@ const maintenanceGuides = [
     title: "Carpet Care and Maintenance for Vancouver Weather",
     description: "Extend the life of your carpet and maintain its appearance with these essential care guidelines.",
     seoParagraph: "Here in Vancouver, carpets need special attention during our rainy season and humid summers. Our guide helps you protect your investment with practical solutions for common challenges local homeowners face. From muddy pet paws to winter salt residue, we'll show you how to keep your carpets fresh and inviting throughout the year.",
-    serviceLink: "/carpet-flooring",
+    serviceLink: "/carpet-installation-vancouver-wa",
     serviceLinkText: "Carpet Flooring Services",
     dailyCare: [
       "Vacuum high-traffic areas daily",
