@@ -2,7 +2,10 @@
 import { Helmet } from "react-helmet";
 import { Card } from "@/components/ui/card";
 import { FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Resources = () => {
   return (
@@ -35,7 +38,7 @@ const Resources = () => {
                 </div>
               </div>
 
-              <Accordion type="single" collapsible>
+              <Accordion type="single" collapsible className="mb-6">
                 {/* Daily Care Section */}
                 <AccordionItem value="daily-care">
                   <AccordionTrigger className="text-xl font-semibold">Daily Care</AccordionTrigger>
@@ -81,6 +84,12 @@ const Resources = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+
+              <Link to={guide.serviceLink} className="inline-block">
+                <Button variant="outline" className="mt-4">
+                  Learn More About Our {guide.serviceLinkText} <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </Card>
           </section>
         ))}
@@ -94,6 +103,8 @@ const maintenanceGuides = [
     title: "Hardwood Floor Maintenance in Vancouver WA",
     description: "Keep your hardwood floors looking beautiful for years to come with these essential care instructions.",
     seoParagraph: "Living in the Pacific Northwest means your hardwood floors face unique challenges. Our maintenance guide helps local homeowners protect their floors from Vancouver's rain and humidity while preserving their beauty and value. Whether you're in Salmon Creek or downtown Vancouver, these tips will help your hardwood floors stay gorgeous through every season.",
+    serviceLink: "/hardwood-flooring",
+    serviceLinkText: "Hardwood Flooring Services",
     dailyCare: [
       "Sweep or vacuum regularly to remove dust and debris",
       "Clean spills immediately with a slightly damp cloth",
@@ -118,6 +129,8 @@ const maintenanceGuides = [
     title: "Vinyl Flooring Care Guide for Vancouver Homes",
     description: "Maintain the appearance and durability of your vinyl flooring with these proper care techniques.",
     seoParagraph: "Modern vinyl flooring is a popular choice among local homeowners, and for good reason. It stands up beautifully to our Northwest weather while providing exceptional durability. From handling morning dew tracked in from Esther Short Park to managing winter moisture, these maintenance tips will help your vinyl floors look great year-round.",
+    serviceLink: "/vinyl-flooring",
+    serviceLinkText: "Vinyl Flooring Services",
     dailyCare: [
       "Sweep or vacuum with a soft brush attachment daily",
       "Wipe up spills promptly to prevent staining",
@@ -142,6 +155,8 @@ const maintenanceGuides = [
     title: "Carpet Care and Maintenance for Vancouver Weather",
     description: "Extend the life of your carpet and maintain its appearance with these essential care guidelines.",
     seoParagraph: "Here in Vancouver, carpets need special attention during our rainy season and humid summers. Our guide helps you protect your investment with practical solutions for common challenges local homeowners face. From muddy pet paws to winter salt residue, we'll show you how to keep your carpets fresh and inviting throughout the year.",
+    serviceLink: "/carpet-flooring",
+    serviceLinkText: "Carpet Flooring Services",
     dailyCare: [
       "Vacuum high-traffic areas daily",
       "Blot spills immediately - never rub or scrub",
