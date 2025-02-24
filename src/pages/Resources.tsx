@@ -93,7 +93,7 @@ const maintenanceGuides = [
   {
     title: "Hardwood Floor Maintenance in Vancouver WA",
     description: "Keep your hardwood floors looking beautiful for years to come with these essential care instructions.",
-    seoParagraph: "As Vancouver's unpredictable weather can affect hardwood flooring, our local experts understand the unique challenges faced by Clark County homeowners. From dealing with the Pacific Northwest's humidity to protecting against rain tracking, these maintenance tips are specifically tailored for Vancouver WA's climate conditions and lifestyle needs.",
+    seoParagraph: "Living in the Pacific Northwest means your hardwood floors face unique challenges. Our maintenance guide helps local homeowners protect their floors from Vancouver's rain and humidity while preserving their beauty and value. Whether you're in Salmon Creek or downtown Vancouver, these tips will help your hardwood floors stay gorgeous through every season.",
     dailyCare: [
       "Sweep or vacuum regularly to remove dust and debris",
       "Clean spills immediately with a slightly damp cloth",
@@ -117,7 +117,7 @@ const maintenanceGuides = [
   {
     title: "Vinyl Flooring Care Guide for Vancouver Homes",
     description: "Maintain the appearance and durability of your vinyl flooring with these proper care techniques.",
-    seoParagraph: "Vancouver WA homeowners increasingly choose vinyl flooring for its exceptional durability and water resistance. Our specialized care guide addresses common concerns in Pacific Northwest homes, including moisture management during rainy seasons and protection against UV fading in sunny rooms overlooking the Columbia River.",
+    seoParagraph: "Modern vinyl flooring is a popular choice among local homeowners, and for good reason. It stands up beautifully to our Northwest weather while providing exceptional durability. From handling morning dew tracked in from Esther Short Park to managing winter moisture, these maintenance tips will help your vinyl floors look great year-round.",
     dailyCare: [
       "Sweep or vacuum with a soft brush attachment daily",
       "Wipe up spills promptly to prevent staining",
@@ -141,7 +141,7 @@ const maintenanceGuides = [
   {
     title: "Carpet Care and Maintenance for Vancouver Weather",
     description: "Extend the life of your carpet and maintain its appearance with these essential care guidelines.",
-    seoParagraph: "Vancouver WA's seasonal weather patterns require special attention for carpet care. Our locally-developed maintenance guide helps Clark County residents deal with tracked-in moisture during wet winters, manage indoor air quality, and maintain carpet freshness despite the Pacific Northwest's unique climate challenges.",
+    seoParagraph: "Here in Vancouver, carpets need special attention during our rainy season and humid summers. Our guide helps you protect your investment with practical solutions for common challenges local homeowners face. From muddy pet paws to winter salt residue, we'll show you how to keep your carpets fresh and inviting throughout the year.",
     dailyCare: [
       "Vacuum high-traffic areas daily",
       "Blot spills immediately - never rub or scrub",
