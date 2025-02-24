@@ -2,6 +2,7 @@
 import { Helmet } from "react-helmet";
 import { Card } from "@/components/ui/card";
 import { FileText } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Resources = () => {
   return (
@@ -15,9 +16,9 @@ const Resources = () => {
       <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Flooring Maintenance Guides</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Vancouver WA Flooring Maintenance Guides</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Learn how to properly care for and maintain your flooring to ensure its longevity and beauty.
+            Expert maintenance guides for Vancouver homeowners to protect and preserve their flooring investment. Trusted by Clark County residents since 1995.
           </p>
         </div>
 
@@ -30,47 +31,56 @@ const Resources = () => {
                 <div>
                   <h2 className="text-2xl font-bold mb-4">{guide.title}</h2>
                   <p className="text-muted-foreground mb-6">{guide.description}</p>
+                  <p className="text-muted-foreground mb-6">{guide.seoParagraph}</p>
                 </div>
               </div>
-              
-              {/* Daily Care */}
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold mb-3">Daily Care</h3>
-                <ul className="space-y-3">
-                  {guide.dailyCare.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="font-medium text-wood-500">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
 
-              {/* Regular Maintenance */}
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold mb-3">Regular Maintenance</h3>
-                <ul className="space-y-3">
-                  {guide.regularMaintenance.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="font-medium text-wood-500">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <Accordion type="single" collapsible>
+                {/* Daily Care Section */}
+                <AccordionItem value="daily-care">
+                  <AccordionTrigger className="text-xl font-semibold">Daily Care</AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="space-y-3 mt-3">
+                      {guide.dailyCare.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="font-medium text-wood-500">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
 
-              {/* Prevention Tips */}
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Prevention Tips</h3>
-                <ul className="space-y-3">
-                  {guide.preventionTips.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <span className="font-medium text-wood-500">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                {/* Regular Maintenance Section */}
+                <AccordionItem value="regular-maintenance">
+                  <AccordionTrigger className="text-xl font-semibold">Regular Maintenance</AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="space-y-3 mt-3">
+                      {guide.regularMaintenance.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="font-medium text-wood-500">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* Prevention Tips Section */}
+                <AccordionItem value="prevention-tips">
+                  <AccordionTrigger className="text-xl font-semibold">Prevention Tips</AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="space-y-3 mt-3">
+                      {guide.preventionTips.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="font-medium text-wood-500">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </Card>
           </section>
         ))}
@@ -81,8 +91,9 @@ const Resources = () => {
 
 const maintenanceGuides = [
   {
-    title: "Hardwood Floor Maintenance",
+    title: "Hardwood Floor Maintenance in Vancouver WA",
     description: "Keep your hardwood floors looking beautiful for years to come with these essential care instructions.",
+    seoParagraph: "As Vancouver's unpredictable weather can affect hardwood flooring, our local experts understand the unique challenges faced by Clark County homeowners. From dealing with the Pacific Northwest's humidity to protecting against rain tracking, these maintenance tips are specifically tailored for Vancouver WA's climate conditions and lifestyle needs.",
     dailyCare: [
       "Sweep or vacuum regularly to remove dust and debris",
       "Clean spills immediately with a slightly damp cloth",
@@ -104,8 +115,9 @@ const maintenanceGuides = [
     ]
   },
   {
-    title: "Vinyl Flooring Care Guide",
+    title: "Vinyl Flooring Care Guide for Vancouver Homes",
     description: "Maintain the appearance and durability of your vinyl flooring with these proper care techniques.",
+    seoParagraph: "Vancouver WA homeowners increasingly choose vinyl flooring for its exceptional durability and water resistance. Our specialized care guide addresses common concerns in Pacific Northwest homes, including moisture management during rainy seasons and protection against UV fading in sunny rooms overlooking the Columbia River.",
     dailyCare: [
       "Sweep or vacuum with a soft brush attachment daily",
       "Wipe up spills promptly to prevent staining",
@@ -127,8 +139,9 @@ const maintenanceGuides = [
     ]
   },
   {
-    title: "Carpet Care and Maintenance",
+    title: "Carpet Care and Maintenance for Vancouver Weather",
     description: "Extend the life of your carpet and maintain its appearance with these essential care guidelines.",
+    seoParagraph: "Vancouver WA's seasonal weather patterns require special attention for carpet care. Our locally-developed maintenance guide helps Clark County residents deal with tracked-in moisture during wet winters, manage indoor air quality, and maintain carpet freshness despite the Pacific Northwest's unique climate challenges.",
     dailyCare: [
       "Vacuum high-traffic areas daily",
       "Blot spills immediately - never rub or scrub",
