@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -68,6 +69,43 @@ const HardwoodFlooring = () => {
           </div>
         </section>
 
+        {/* Detailed Services Section */}
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Transform Your Home with Expert Hardwood Flooring Services</h2>
+                <p className="text-lg text-muted-foreground">
+                  Unlock the timeless elegance and lasting value of hardwood floors with our comprehensive suite of services. Whether you're envisioning a stunning new installation, seeking to revitalize existing floors through professional refinishing, or require meticulous repair services, our team of skilled artisans delivers unparalleled craftsmanship.
+                </p>
+              </div>
+
+              <div className="space-y-16">
+                <div className="prose max-w-none">
+                  <h3 className="text-2xl font-bold mb-4">New Installation: Crafting Your Dream Floors - Step-by-Step</h3>
+                  <p className="text-muted-foreground">
+                    Experience the luxury of brand-new hardwood with our expert installation services. We begin with a thorough subfloor inspection and preparation, ensuring a level and stable base. This may involve leveling uneven spots, repairing damaged areas, or installing a moisture barrier. Next, we carefully acclimate the hardwood, allowing it to adjust to your home's humidity levels, preventing future warping or gapping. From classic oak and maple to exotic Brazilian cherry, we offer a wide variety of premium wood options. Our expert installation techniques include precise measurement, cutting, and nailing or gluing, depending on the chosen method. We specialize in custom patterns like herringbone or chevron, requiring meticulous planning and execution to create a truly unique and personalized space. Finally, we sand and finish the newly installed floors, ensuring a smooth and durable surface.
+                  </p>
+                </div>
+
+                <div className="prose max-w-none">
+                  <h3 className="text-2xl font-bold mb-4">Refinishing: Revive and Restore - Detailed Process</h3>
+                  <p className="text-muted-foreground">
+                    Breathe new life into your worn hardwood floors with our professional refinishing services. Our process begins with multiple passes of sanding, using progressively finer grits to remove the old finish, scratches, and imperfections. We meticulously clean the floor to remove all dust and debris. Explore our diverse staining options to achieve the perfect hue, applying the stain evenly and allowing it to dry thoroughly. We then apply multiple coats of high-quality finish, such as polyurethane, for lasting protection and shine. Benefit from our precise scratch repair and color matching expertise, ensuring seamless blending of repaired areas with the rest of the floor. Finally, we perform a final inspection to ensure a flawless finish.
+                  </p>
+                </div>
+
+                <div className="prose max-w-none">
+                  <h3 className="text-2xl font-bold mb-4">Repair Services: Preserve and Protect - Addressing Specific Issues</h3>
+                  <p className="text-muted-foreground">
+                    Don't let damaged hardwood detract from your home's beauty. Our repair services address a range of issues with precision. For board replacement, we carefully remove the damaged board, match the wood species and grain, and install a new board, seamlessly integrating it into the existing floor. For water damage repair, we assess the extent of the damage, remove affected boards, dry the subfloor, and replace damaged sections. For gap filling, we use specialized fillers that match the wood's color and texture, preventing drafts and maintaining the floor's integrity. For scratch repair, we use specialized techniques and fillers to minimize the appearance of scratches, followed by touch-up finishing. We utilize proven techniques and high-quality materials to seamlessly restore your floors to their original splendor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose Us */}
         <section className="section-padding">
           <div className="container-custom">
@@ -84,6 +122,11 @@ const HardwoodFlooring = () => {
                       </div>
                     </div>
                   ))}
+                </div>
+                <div className="mt-8">
+                  <p className="text-muted-foreground">
+                    We're committed to exceeding your expectations with exceptional quality and customer service. Our attention to detail, combined with our passion for hardwood flooring, ensures a result that you'll cherish for years to come. We utilize dust containment systems to minimize mess during sanding and prioritize eco-friendly finishing products.
+                  </p>
                 </div>
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
