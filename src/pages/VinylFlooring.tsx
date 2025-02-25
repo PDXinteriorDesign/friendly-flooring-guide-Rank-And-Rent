@@ -54,7 +54,7 @@ const VinylFlooring = () => {
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow animate-fade-up">
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-wood-500" />
@@ -62,19 +62,55 @@ const VinylFlooring = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full">Learn More</Button>
                 </Card>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Why Choose Vinyl Section */}
+        {/* Detailed Services Section */}
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Transform Your Space with Versatile Vinyl Flooring Solutions</h2>
+                <p className="text-lg text-muted-foreground">
+                  Discover the perfect blend of style, durability, and affordability with our comprehensive vinyl flooring services. From the luxurious wood-look of Luxury Vinyl Plank (LVP) to the seamless practicality of Sheet Vinyl and the versatile design options of Vinyl Tile, we offer solutions to elevate any space.
+                </p>
+              </div>
+
+              <div className="space-y-16">
+                <div className="prose max-w-none">
+                  <h3 className="text-2xl font-bold mb-4">Luxury Vinyl Plank (LVP): Achieve the Elegance of Wood with Unmatched Durability</h3>
+                  <p className="text-muted-foreground">
+                    Experience the warmth and beauty of hardwood with the exceptional resilience of LVP. Our premium LVP installation process begins with a meticulous subfloor preparation, ensuring a smooth and level surface. We then carefully lay each plank, utilizing a click-lock system or adhesive for a secure and seamless fit. The realistic wood appearance is achieved through high-definition printing and textured surfaces, mimicking natural wood grain. The durable construction of LVP provides superior resistance to scratches, dents, and wear, while its waterproof protection makes it ideal for kitchens and bathrooms. Enjoy the easy maintenance of LVP, requiring only simple sweeping and mopping to keep it looking pristine.
+                  </p>
+                </div>
+
+                <div className="prose max-w-none">
+                  <h3 className="text-2xl font-bold mb-4">Sheet Vinyl: Seamless and Practical for Large Spaces and Bathrooms</h3>
+                  <p className="text-muted-foreground">
+                    For large areas or moisture-prone environments like bathrooms, our sheet vinyl installation offers a practical and cost-effective solution. We start by precisely measuring the space and preparing the subfloor. The sheet vinyl is then carefully rolled out and adhered to the floor, ensuring a seamless installation that prevents water seepage. Its moisture-resistant properties make it perfect for areas exposed to spills and humidity. With a variety of patterns and textures available, you can achieve the desired aesthetic without sacrificing functionality. Sheet vinyl provides a durable and cost-effective flooring option that's easy to clean and maintain.
+                  </p>
+                </div>
+
+                <div className="prose max-w-none">
+                  <h3 className="text-2xl font-bold mb-4">Vinyl Tile: Versatility and Customization for Any Room</h3>
+                  <p className="text-muted-foreground">
+                    Unleash your creativity with our diverse range of vinyl tile options. Our installation process involves precise measurement and layout, allowing for custom patterns and designs. Each tile is individually adhered to the subfloor, providing a stable and long-lasting surface. The easy replacement feature allows for quick and simple repairs or updates. The water-resistant properties of vinyl tile make it suitable for various rooms, including kitchens and bathrooms. With a wide selection of colors, patterns, and textures, you can create a unique and personalized space. Vinyl tile offers affordable options without compromising on style or durability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us Section */}
         <section className="section-padding">
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-up">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Choose Vinyl Flooring?</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Choose Us?</h2>
                 <div className="space-y-6">
                   {benefits.map((benefit, index) => (
                     <div key={index} className="flex gap-4">
@@ -85,6 +121,11 @@ const VinylFlooring = () => {
                       </div>
                     </div>
                   ))}
+                </div>
+                <div className="mt-8">
+                  <p className="text-muted-foreground">
+                    We pride ourselves on delivering exceptional vinyl flooring installations with meticulous attention to detail and superior craftsmanship. Our experienced installers ensure a flawless finish, and we use high-quality materials to guarantee lasting performance. We prioritize customer satisfaction and strive to exceed your expectations with every project.
+                  </p>
                 </div>
               </div>
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
