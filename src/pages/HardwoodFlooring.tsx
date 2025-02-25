@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -54,7 +53,7 @@ const HardwoodFlooring = () => {
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow animate-fade-up">
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-wood-500" />
@@ -62,7 +61,6 @@ const HardwoodFlooring = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full">Learn More</Button>
                 </Card>
               ))}
             </div>
