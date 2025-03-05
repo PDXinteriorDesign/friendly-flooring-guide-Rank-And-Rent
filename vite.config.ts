@@ -22,7 +22,9 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          ui: ['@/components/ui']
+          // Fix: Don't try to chunk the UI components as a single module
+          // This avoids the directory import error
+          // ui: ['@/components/ui'] 
         }
       }
     }
