@@ -10,7 +10,7 @@
     <meta property="og:image" content="/og-image.png" />
     <!-- Explicitly set favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <!-- HubSpot Form Script - Fixed to ensure proper loading -->
+    <!-- HubSpot Form Script - with explicit type -->
     <script charset="utf-8" type="text/javascript" src="https://js-na2.hsforms.net/forms/embed/v2.js" defer></script>
   </head>
 
@@ -22,6 +22,7 @@
         console.error('Runtime error caught:', event.error);
       });
     </script>
+    <!-- Ensure correct MIME type for the main script -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
