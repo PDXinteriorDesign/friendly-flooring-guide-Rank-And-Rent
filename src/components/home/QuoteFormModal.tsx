@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 interface QuoteFormModalProps {
-  trigger: React.ReactNode;
+  trigger?: React.ReactNode;
   buttonText?: string;
 }
 
