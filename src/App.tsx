@@ -1,10 +1,12 @@
 
-import { Suspense, lazy, ErrorBoundary } from "react";
+import { Suspense, lazy } from "react";
+import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary"; // Import from react-error-boundary
 import MainNav from "./components/MainNav";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
@@ -39,14 +41,14 @@ const ErrorFallback = () => (
 );
 
 // Custom error boundary class
-class AppErrorBoundary extends React.Component {
+class AppErrorBoundary extends React.Component<{children: React.ReactNode}> {
   state = { hasError: false };
   
   static getDerivedStateFromError() {
     return { hasError: true };
   }
   
-  componentDidCatch(error, info) {
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
     console.error("App error:", error, info);
   }
   
@@ -79,7 +81,7 @@ const App = () => (
       </Helmet>
       <Toaster />
       <Sonner />
-      <AppErrorBoundary>
+      <ReactErrorBoundary FallbackComponent={ErrorFallback}>
         <BrowserRouter>
           <ScrollToTop />
           <MainNav />
@@ -98,7 +100,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-      </AppErrorBoundary>
+      </ReactErrorBoundary>
     </TooltipProvider>
   </QueryClientProvider>
 );
