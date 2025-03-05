@@ -6,12 +6,14 @@ import './index.css'
 // Error boundary for React rendering
 const renderApp = () => {
   try {
+    console.log("Starting application render...");
     const rootElement = document.getElementById("root");
     if (!rootElement) {
       console.error("Root element not found");
       return;
     }
     
+    console.log("Root element found, rendering app...");
     createRoot(rootElement).render(<App />);
     console.log("App rendered successfully");
   } catch (error) {
@@ -29,4 +31,5 @@ const renderApp = () => {
   }
 };
 
+console.log("main.tsx loaded");
 renderApp();
