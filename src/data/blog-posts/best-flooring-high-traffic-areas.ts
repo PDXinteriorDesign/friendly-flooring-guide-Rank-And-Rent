@@ -1,9 +1,10 @@
+
 export const post = {
   slug: "best-flooring-high-traffic-areas",
   title: "Best Flooring for High-Traffic Areas: Durability, Style & Cost",
   excerpt: "Discover the most durable and stylish flooring options for high-traffic areas in your home. Compare materials, costs, and maintenance requirements for busy households.",
   date: "March 10, 2024",
-  image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901",
+  image: "/lovable-uploads/fd2b0592-2024-4092-877e-0c9ad7abb49b.png",
   content: `
       <h2>Is High-Traffic Flooring Different from Regular Flooring?</h2>
       <p>If your home sees heavy foot traffic, whether from kids, pets, or frequent visitors, your flooring needs to stand up to daily wear and tear. Our <a href="/vinyl-flooring-vancouver-wa">Vancouver vinyl flooring experts</a> specialize in durable solutions for high-traffic areas.</p>
