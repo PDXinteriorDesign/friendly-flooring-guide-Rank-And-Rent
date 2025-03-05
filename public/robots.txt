@@ -2,4 +2,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://floorvancouver.com/sitemap.xml
+Sitemap: https://flooringquotesvancouver.com/sitemap.xml
+
