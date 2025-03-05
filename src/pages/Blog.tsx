@@ -35,11 +35,13 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredPosts.map((post, index) => (
               <Card key={post.slug} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className="w-full h-48 object-cover"
-                />
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover object-bottom"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="text-sm text-muted-foreground mb-2">{post.date}</div>
                   <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
@@ -61,11 +63,13 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {recentPosts.map((post, index) => (
               <Card key={post.slug} className="flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition-shadow">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className="w-full md:w-48 h-48 object-cover"
-                />
+                <div className="relative w-full md:w-48 h-48 overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover object-bottom"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="text-sm text-muted-foreground mb-2">{post.date}</div>
                   <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
