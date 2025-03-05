@@ -1,9 +1,10 @@
+
 export const post = {
   slug: "glue-down-vs-click-lock-vinyl-flooring",
   title: "The Pros and Cons of Glue-Down vs. Click-Lock Vinyl Flooring",
   excerpt: "Trying to decide between glue-down and click-lock vinyl flooring? Compare installation methods, durability, and costs to make the right choice for your home.",
   date: "February 25, 2024",
-  image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901",
+  image: "/lovable-uploads/544726b1-49ff-444e-9c47-cd503801077b.png",
   content: `
       <h2>Understanding Your Vinyl Flooring Options</h2>
       <p>When it comes to <a href="/vinyl-flooring-vancouver-wa">vinyl flooring installation</a>, you'll encounter two main methods: glue-down and click-lock (floating) installation. For detailed installation steps, check out our comprehensive <a href="/blog/vinyl-plank-flooring-installation-guide">vinyl plank installation guide</a>.</p>
