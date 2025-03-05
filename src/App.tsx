@@ -19,6 +19,7 @@ import BlogPost from "./pages/BlogPost";
 import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
 import { Helmet } from "react-helmet";
+import "./index.css"; // Ensure CSS is properly imported
 
 const queryClient = new QueryClient();
 

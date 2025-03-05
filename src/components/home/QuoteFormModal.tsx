@@ -39,19 +39,24 @@ const QuoteFormModal = ({ trigger, buttonText = "Get Your Free Quote" }: QuoteFo
       // Clean up any existing form
       formContainerRef.current.innerHTML = '';
       
-      // Use HubSpot's JavaScript API to create the form
+      // Use HubSpot's JavaScript API to create the form with a more reliable approach
       const checkHubSpotInterval = setInterval(() => {
         if (window.hbspt) {
           clearInterval(checkHubSpotInterval);
           
-          window.hbspt.forms.create({
-            region: "na2",
-            portalId: "241947693",
-            formId: "5621cd84-fd15-4447-8d6c-f5c60cc76779",
-            target: formContainerRef.current
-          });
+          try {
+            window.hbspt.forms.create({
+              region: "na2",
+              portalId: "241947693",
+              formId: "5621cd84-fd15-4447-8d6c-f5c60cc76779",
+              target: formContainerRef.current
+            });
+            console.log("HubSpot form initialized successfully");
+          } catch (error) {
+            console.error("Error initializing HubSpot form:", error);
+          }
         }
-      }, 100);
+      }, 200); // Increased interval for better reliability
 
       // Clear interval on component unmount
       return () => {
