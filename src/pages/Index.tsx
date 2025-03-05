@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Mail, CheckCircle2, Star, Ruler, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -36,7 +35,6 @@ const Index = () => {
       <CanonicalTag url="https://floorvancouver.com" />
 
       <div className="min-h-screen">
-        {/* Hero Section */}
         <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
@@ -66,7 +64,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Trust Indicators Section */}
         <section className="py-8 bg-primary/5">
           <div className="container-custom">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -94,7 +91,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Services Section */}
         <section className="section-padding bg-white">
           <div className="container-custom">
             <div className="text-center mb-16 animate-fade-up">
@@ -117,7 +113,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Why Choose Us */}
         <section className="section-padding bg-primary/5">
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -146,7 +141,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* FAQ Section */}
         <section className="section-padding bg-white" id="faqs">
           <div className="container-custom">
             <div className="text-center mb-16 animate-fade-up">
@@ -169,7 +163,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
         <section className="section-padding bg-primary/5" id="contact">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
@@ -177,16 +170,11 @@ const Index = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 Contact us today for a free consultation and quote. We serve Vancouver, WA and surrounding areas including Ridgefield, Salmon Creek, and Battle Ground.
               </p>
-              <div className="grid sm:grid-cols-3 gap-6 mb-8">
-                <a href="tel:+1234567890" className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
-                  <Phone className="w-6 h-6 mb-3" />
-                  <span className="font-semibold">Call Us</span>
-                  <span className="text-sm opacity-90">(123) 456-7890</span>
-                </a>
-                <a href="mailto:info@example.com" className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
+              <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                <a href="mailto:flooringquotesvancouver@gmail.com" className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
                   <Mail className="w-6 h-6 mb-3" />
                   <span className="font-semibold">Email Us</span>
-                  <span className="text-sm opacity-90">info@example.com</span>
+                  <span className="text-sm opacity-90">flooringquotesvancouver@gmail.com</span>
                 </a>
                 <div className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground">
                   <MapPin className="w-6 h-6 mb-3" />
