@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
+// Log the environment
+console.log("Environment:", import.meta.env.MODE);
+console.log("Base URL:", import.meta.env.BASE_URL);
+
 // Error boundary for React rendering
 const renderApp = () => {
   try {
