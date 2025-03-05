@@ -1,9 +1,10 @@
+
 export const post = {
   slug: "laminate-vs-vinyl-flooring-comparison",
   title: "Laminate vs. Vinyl Flooring – Which Is Better for Your Home?",
   excerpt: "Compare laminate and vinyl flooring options to find the perfect match for your home. Learn about durability, water resistance, and cost differences.",
   date: "March 5, 2024",
-  image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+  image: "/lovable-uploads/df9914bd-1442-4316-9f1e-08a6a3da6c67.png",
   content: `
       <h2>What's the Difference Between Vinyl and Laminate Flooring?</h2>
       <p>Both <a href="/vinyl-flooring-vancouver-wa">vinyl</a> and <a href="/laminate-flooring-vancouver-wa">laminate flooring</a> offer affordable, stylish, and durable alternatives to hardwood and tile—but they aren't the same! Let's dive deep into their differences to help you make an informed decision.</p>
