@@ -1,9 +1,10 @@
+
 export const post = {
   slug: "are-vinyl-floors-waterproof",
   title: "Are Vinyl Floors Waterproof? Understanding Water-Resistant vs. Waterproof Vinyl",
   excerpt: "Discover the crucial differences between water-resistant and waterproof vinyl flooring, plus expert tips for choosing the right option for your space.",
   date: "March 15, 2024",
-  image: "/lovable-uploads/vinyl-waterproof-floor.jpg",
+  image: "/lovable-uploads/aaa25842-6e88-4031-a4d7-b3f27cc16947.png",
   content: `
       <h2>Water-Resistant vs. Waterproof Vinyl Flooring: What's the Difference?</h2>
       <p>Not all vinyl floors are created equal, and understanding the difference between water-resistant and waterproof can save you from headaches (and costly repairs) down the road. If you're considering <a href="/vinyl-flooring">vinyl flooring installation in Vancouver WA</a>, this guide will help you make an informed decision.</p>
