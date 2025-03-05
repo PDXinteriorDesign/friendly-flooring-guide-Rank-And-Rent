@@ -1,5 +1,5 @@
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -14,27 +14,54 @@ interface QuoteFormModalProps {
   buttonText?: string;
 }
 
+declare global {
+  interface Window {
+    hbspt?: {
+      forms: {
+        create: (options: {
+          region: string;
+          portalId: string;
+          formId: string;
+          target: string | HTMLElement;
+        }) => void;
+      };
+    };
+  }
+}
+
 const QuoteFormModal = ({ trigger, buttonText = "Get Your Free Quote" }: QuoteFormModalProps) => {
   const formContainerRef = useRef<HTMLDivElement>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Clean up any existing form
-    if (formContainerRef.current) {
+    // Only initialize the form when the dialog is open
+    if (isOpen && formContainerRef.current) {
+      // Clean up any existing form
       formContainerRef.current.innerHTML = '';
       
-      // Create the HubSpot form container
-      const formContainer = document.createElement('div');
-      formContainer.className = "hs-form-frame";
-      formContainer.setAttribute("data-region", "na2");
-      formContainer.setAttribute("data-form-id", "5621cd84-fd15-4447-8d6c-f5c60cc76779");
-      formContainer.setAttribute("data-portal-id", "241947693");
-      
-      formContainerRef.current.appendChild(formContainer);
+      // Use HubSpot's JavaScript API to create the form
+      const checkHubSpotInterval = setInterval(() => {
+        if (window.hbspt) {
+          clearInterval(checkHubSpotInterval);
+          
+          window.hbspt.forms.create({
+            region: "na2",
+            portalId: "241947693",
+            formId: "5621cd84-fd15-4447-8d6c-f5c60cc76779",
+            target: formContainerRef.current
+          });
+        }
+      }, 100);
+
+      // Clear interval on component unmount
+      return () => {
+        clearInterval(checkHubSpotInterval);
+      };
     }
-  }, []);
+  }, [isOpen]);
 
   return (
-    <Dialog>
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         {trigger || (
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
