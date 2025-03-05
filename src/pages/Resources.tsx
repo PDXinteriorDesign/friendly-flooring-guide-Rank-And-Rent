@@ -6,28 +6,50 @@ import { Link } from "react-router-dom";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import CanonicalTag from "@/components/CanonicalTag";
+import FAQSchema from "@/components/FAQSchema";
 
 const Resources = () => {
+  // Create FAQ items for schema markup
+  const allFaqs = maintenanceGuides.flatMap(guide => {
+    return [
+      {
+        question: `What is the best way to clean ${guide.title.split(" ")[0]} floors daily?`,
+        answer: guide.dailyCare[0]
+      },
+      {
+        question: `How often should I professionally clean my ${guide.title.split(" ")[0]} floors in Vancouver?`,
+        answer: guide.regularMaintenance[guide.regularMaintenance.length - 1]
+      }
+    ];
+  });
+
   return (
     <>
       <Helmet>
-        <title>Flooring Maintenance Guides | Vancouver WA Flooring Care</title>
-        <meta name="description" content="Comprehensive flooring maintenance guides for hardwood, vinyl, and carpet flooring. Learn how to properly care for and maintain your floors in Vancouver WA." />
-        <meta name="keywords" content="flooring maintenance, floor care guide, hardwood maintenance, vinyl floor care, carpet care, Vancouver WA flooring" />
+        <title>Flooring Maintenance Guides | Vancouver WA Flooring Care Resources</title>
+        <meta name="description" content="Comprehensive Vancouver WA flooring maintenance guides for hardwood, vinyl, and carpet. Expert tips for extending your floor's lifespan in the Pacific Northwest climate. Local maintenance advice from Clark County's flooring specialists." />
+        <meta name="keywords" content="flooring maintenance Vancouver WA, floor care guide Clark County, hardwood maintenance Pacific Northwest, vinyl floor care Vancouver, carpet care Washington, Vancouver WA flooring maintenance" />
+        <meta name="geo.region" content="US-WA" />
+        <meta name="geo.placename" content="Vancouver" />
       </Helmet>
+      
+      <CanonicalTag url="https://floorvancouver.com/resources" />
+      
+      <FAQSchema faqs={allFaqs} />
 
       <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Vancouver WA Flooring Maintenance Guides</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Expert maintenance guides for Vancouver homeowners to protect and preserve their flooring investment. Trusted by Clark County residents since 1995.
+            Expert maintenance guides for Vancouver homeowners to protect and preserve their flooring investment. Trusted by Clark County residents since 2005.
           </p>
         </div>
 
         {/* Maintenance Guides */}
         {maintenanceGuides.map((guide, index) => (
-          <section key={index} className="max-w-4xl mx-auto mb-16">
+          <section key={index} className="max-w-4xl mx-auto mb-16" id={`${guide.title.split(" ")[0].toLowerCase()}-maintenance`}>
             <Card className="p-8">
               <div className="flex items-start gap-4 mb-6">
                 <FileText className="h-8 w-8 text-wood-500 flex-shrink-0 mt-1" />
@@ -41,7 +63,7 @@ const Resources = () => {
               <Accordion type="single" collapsible className="mb-6">
                 {/* Daily Care Section */}
                 <AccordionItem value="daily-care">
-                  <AccordionTrigger className="text-xl font-semibold">Daily Care</AccordionTrigger>
+                  <AccordionTrigger className="text-xl font-semibold">Daily Care for {guide.title.split(" ")[0]} Floors</AccordionTrigger>
                   <AccordionContent>
                     <ul className="space-y-3 mt-3">
                       {guide.dailyCare.map((item, i) => (
@@ -56,7 +78,7 @@ const Resources = () => {
 
                 {/* Regular Maintenance Section */}
                 <AccordionItem value="regular-maintenance">
-                  <AccordionTrigger className="text-xl font-semibold">Regular Maintenance</AccordionTrigger>
+                  <AccordionTrigger className="text-xl font-semibold">Regular {guide.title.split(" ")[0]} Maintenance</AccordionTrigger>
                   <AccordionContent>
                     <ul className="space-y-3 mt-3">
                       {guide.regularMaintenance.map((item, i) => (
@@ -71,7 +93,7 @@ const Resources = () => {
 
                 {/* Prevention Tips Section */}
                 <AccordionItem value="prevention-tips">
-                  <AccordionTrigger className="text-xl font-semibold">Prevention Tips</AccordionTrigger>
+                  <AccordionTrigger className="text-xl font-semibold">Vancouver-Specific {guide.title.split(" ")[0]} Prevention Tips</AccordionTrigger>
                   <AccordionContent>
                     <ul className="space-y-3 mt-3">
                       {guide.preventionTips.map((item, i) => (
@@ -87,7 +109,7 @@ const Resources = () => {
 
               <Link to={guide.serviceLink} className="inline-block">
                 <Button variant="outline" className="mt-4">
-                  Learn More About Our {guide.serviceLinkText} <ArrowRight className="ml-2 h-4 w-4" />
+                  Explore Our Vancouver {guide.serviceLinkText} <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </Card>

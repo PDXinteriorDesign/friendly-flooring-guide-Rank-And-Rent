@@ -18,12 +18,20 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
+import { Helmet } from "react-helmet";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#4f46e5" />
+        <meta property="og:site_name" content="FloorVancouver - Vancouver WA Flooring Experts" />
+        <meta property="og:type" content="website" />
+        <link rel="alternate" href="https://floorvancouver.com" hrefLang="en-us" />
+      </Helmet>
       <Toaster />
       <Sonner />
       <BrowserRouter>

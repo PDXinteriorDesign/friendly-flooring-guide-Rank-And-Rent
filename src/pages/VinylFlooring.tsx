@@ -4,23 +4,36 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import ServiceSchema from "@/components/ServiceSchema";
+import CanonicalTag from "@/components/CanonicalTag";
 
 const VinylFlooring = () => {
   return (
     <>
       <Helmet>
-        <title>Vinyl Flooring Installation Vancouver WA | LVP & Sheet Vinyl Experts</title>
-        <meta name="description" content="Expert vinyl flooring installation in Vancouver & Ridgefield, WA. Luxury vinyl plank, sheet vinyl, and waterproof options. Get free installation quotes today!" />
-        <meta name="keywords" content="vinyl flooring installation Vancouver, luxury vinyl plank Vancouver, vinyl flooring for kitchens Vancouver, waterproof vinyl flooring, vinyl tile flooring, vinyl plank flooring installation" />
+        <title>Vinyl Flooring Installation Vancouver WA | LVP & SPC Vinyl Experts</title>
+        <meta name="description" content="Expert vinyl flooring installation in Vancouver & Ridgefield, WA. Luxury vinyl plank (LVP), SPC vinyl, and 100% waterproof options. Local installers with 15+ years experience. Free in-home consultations!" />
+        <meta name="keywords" content="vinyl flooring installation Vancouver WA, luxury vinyl plank Vancouver, SPC vinyl flooring Clark County, waterproof vinyl flooring, vinyl plank flooring installation, Vancouver WA flooring company" />
+        <meta name="geo.region" content="US-WA" />
+        <meta name="geo.placename" content="Vancouver" />
       </Helmet>
+      
+      <ServiceSchema 
+        name="Vinyl Flooring Installation Vancouver WA"
+        description="Professional vinyl flooring installation in Vancouver WA. Luxury vinyl plank (LVP), sheet vinyl, and waterproof options professionally installed with expert craftsmanship and free quotes."
+        image="/lovable-uploads/df9914bd-1442-4316-9f1e-08a6a3da6c67.png"
+        url="https://floorvancouver.com/vinyl-flooring-vancouver-wa"
+      />
+      
+      <CanonicalTag url="https://floorvancouver.com/vinyl-flooring-vancouver-wa" />
 
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden" id="vinyl-hero">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d"
-              alt="Modern vinyl flooring installation in Vancouver"
+              src="/lovable-uploads/df9914bd-1442-4316-9f1e-08a6a3da6c67.png"
+              alt="Modern vinyl plank flooring installation in Vancouver WA home, showcasing wood-look luxury vinyl with waterproof properties by local installers"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
@@ -28,13 +41,13 @@ const VinylFlooring = () => {
           <div className="container-custom relative z-10 text-white">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                Premium Vinyl Flooring Solutions
+                Vancouver's Vinyl Flooring Experts
               </h1>
               <p className="text-lg sm:text-xl mb-8 text-white/90">
-                Durable, waterproof, and stylish flooring options for every room
+                Durable, waterproof, and stylish vinyl flooring solutions for every Clark County home
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
-                Get Your Free Quote
+                Get Your Free Vancouver Quote
               </Button>
             </div>
           </div>
@@ -69,37 +82,45 @@ const VinylFlooring = () => {
         </section>
 
         {/* Detailed Services Section */}
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-white" id="vinyl-options">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Transform Your Space with Versatile Vinyl Flooring Solutions</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Transform Your Vancouver Home with Versatile Vinyl Flooring</h2>
                 <p className="text-lg text-muted-foreground">
-                  Discover the perfect blend of style, durability, and affordability with our comprehensive vinyl flooring services. From the luxurious wood-look of Luxury Vinyl Plank (LVP) to the seamless practicality of Sheet Vinyl and the versatile design options of Vinyl Tile, we offer solutions to elevate any space.
+                  Discover the perfect blend of style, durability, and affordability with our comprehensive vinyl flooring services. From the luxurious wood-look of Luxury Vinyl Plank (LVP) to the seamless practicality of Sheet Vinyl and the versatile design options of Vinyl Tile, we offer solutions to elevate any Clark County space.
                 </p>
               </div>
 
               <div className="space-y-16">
                 <div className="prose max-w-none">
-                  <h3 className="text-2xl font-bold mb-4">Luxury Vinyl Plank (LVP): Achieve the Elegance of Wood with Unmatched Durability</h3>
+                  <h3 className="text-2xl font-bold mb-4">Luxury Vinyl Plank (LVP): Premium Wood-Look Flooring for Vancouver Homes</h3>
                   <p className="text-muted-foreground">
-                    Experience the warmth and beauty of hardwood with the exceptional resilience of LVP. Our premium LVP installation process begins with a meticulous subfloor preparation, ensuring a smooth and level surface. We then carefully lay each plank, utilizing a click-lock system or adhesive for a secure and seamless fit. The realistic wood appearance is achieved through high-definition printing and textured surfaces, mimicking natural wood grain. The durable construction of LVP provides superior resistance to scratches, dents, and wear, while its waterproof protection makes it ideal for kitchens and bathrooms. Enjoy the easy maintenance of LVP, requiring only simple sweeping and mopping to keep it looking pristine.
+                    Experience the warmth and beauty of hardwood with the exceptional resilience of LVP. Our premium LVP installation process begins with a meticulous subfloor preparation, ensuring a smooth and level surface. We then carefully lay each plank, utilizing a click-lock system or adhesive for a secure and seamless fit. The realistic wood appearance is achieved through high-definition printing and textured surfaces, mimicking natural wood grain. The durable construction of LVP provides superior resistance to scratches, dents, and wear, while its waterproof protection makes it ideal for Vancouver kitchens and bathrooms, standing up perfectly to our Pacific Northwest climate.
                   </p>
                 </div>
 
                 <div className="prose max-w-none">
-                  <h3 className="text-2xl font-bold mb-4">Sheet Vinyl: Seamless and Practical for Large Spaces and Bathrooms</h3>
+                  <h3 className="text-2xl font-bold mb-4">Sheet Vinyl: Seamless Solution for Vancouver's Moisture-Prone Areas</h3>
                   <p className="text-muted-foreground">
-                    For large areas or moisture-prone environments like bathrooms, our sheet vinyl installation offers a practical and cost-effective solution. We start by precisely measuring the space and preparing the subfloor. The sheet vinyl is then carefully rolled out and adhered to the floor, ensuring a seamless installation that prevents water seepage. Its moisture-resistant properties make it perfect for areas exposed to spills and humidity. With a variety of patterns and textures available, you can achieve the desired aesthetic without sacrificing functionality. Sheet vinyl provides a durable and cost-effective flooring option that's easy to clean and maintain.
+                    For large areas or moisture-prone environments like bathrooms, our sheet vinyl installation offers a practical and cost-effective solution for Vancouver homes. We start by precisely measuring the space and preparing the subfloor. The sheet vinyl is then carefully rolled out and adhered to the floor, ensuring a seamless installation that prevents water seepage. Its moisture-resistant properties make it perfect for areas exposed to spills and humidity, especially important in our rainy Pacific Northwest climate. With a variety of patterns and textures available, you can achieve the desired aesthetic without sacrificing functionality in your Clark County home.
                   </p>
                 </div>
 
                 <div className="prose max-w-none">
-                  <h3 className="text-2xl font-bold mb-4">Vinyl Tile: Versatility and Customization for Any Room</h3>
+                  <h3 className="text-2xl font-bold mb-4">Vinyl Tile: Custom Options for Vancouver WA Homeowners</h3>
                   <p className="text-muted-foreground">
-                    Unleash your creativity with our diverse range of vinyl tile options. Our installation process involves precise measurement and layout, allowing for custom patterns and designs. Each tile is individually adhered to the subfloor, providing a stable and long-lasting surface. The easy replacement feature allows for quick and simple repairs or updates. The water-resistant properties of vinyl tile make it suitable for various rooms, including kitchens and bathrooms. With a wide selection of colors, patterns, and textures, you can create a unique and personalized space. Vinyl tile offers affordable options without compromising on style or durability.
+                    Unleash your creativity with our diverse range of vinyl tile options for Vancouver homes. Our installation process involves precise measurement and layout, allowing for custom patterns and designs that reflect your unique style. Each tile is individually adhered to the subfloor, providing a stable and long-lasting surface. The easy replacement feature allows for quick and simple repairs or updates as needed. The water-resistant properties of vinyl tile make it suitable for various rooms in your Vancouver home, including kitchens and bathrooms. With a wide selection of colors, patterns, and textures, you can create a unique and personalized space that withstands our local climate.
                   </p>
                 </div>
+              </div>
+
+              <div className="mt-16 text-center">
+                <Link to="/blog/are-vinyl-floors-waterproof">
+                  <Button variant="outline" size="lg">
+                    Learn More About Waterproof Vinyl Options <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -140,15 +161,15 @@ const VinylFlooring = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-wood-100">
+        <section className="section-padding bg-wood-100" id="contact">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Upgrade Your Vancouver Floors?</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Get a free, no-obligation quote for your vinyl flooring project today.
+                Get a free, no-obligation quote for your vinyl flooring project today. Serving Vancouver, Ridgefield, Salmon Creek, Battle Ground and all of Clark County.
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
-                Request Free Quote <ArrowRight className="ml-2" />
+                Request Free Vancouver Quote <ArrowRight className="ml-2" />
               </Button>
             </div>
           </div>

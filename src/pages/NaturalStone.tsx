@@ -1,16 +1,30 @@
+
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import ServiceSchema from "@/components/ServiceSchema";
+import CanonicalTag from "@/components/CanonicalTag";
 
 const NaturalStone = () => {
   return (
     <>
       <Helmet>
-        <title>Natural Stone Flooring Vancouver WA | Marble, Granite & More</title>
-        <meta name="description" content="Luxury natural stone flooring installation in Vancouver WA. Expert installation of marble, granite, travertine, and slate. Create timeless elegance with natural stone." />
-        <meta name="keywords" content="natural stone flooring Vancouver WA, marble flooring, granite floors, travertine installation, slate flooring" />
+        <title>Natural Stone Flooring Vancouver WA | Marble, Granite & Slate Installation</title>
+        <meta name="description" content="Luxury natural stone flooring installation in Vancouver WA. Expert installation of marble, granite, travertine, and slate. Local stone flooring specialists with 15+ years experience. Create timeless elegance in your Clark County home." />
+        <meta name="keywords" content="natural stone flooring Vancouver WA, marble flooring installation, granite floors Vancouver, travertine installation Clark County, slate flooring contractors Vancouver" />
+        <meta name="geo.region" content="US-WA" />
+        <meta name="geo.placename" content="Vancouver" />
       </Helmet>
+      
+      <ServiceSchema 
+        name="Natural Stone Flooring Installation Vancouver WA"
+        description="Premium natural stone flooring services in Vancouver WA. Expert installation of marble, granite, travertine, and slate with free consultations and long-lasting durability."
+        image="/lovable-uploads/b2b0388e-d34b-4577-8444-a5f7bacd095d.png"
+        url="https://floorvancouver.com/natural-stone-vancouver-wa"
+      />
+      
+      <CanonicalTag url="https://floorvancouver.com/natural-stone-vancouver-wa" />
 
       <div className="min-h-screen">
         {/* Hero Section */}
@@ -18,7 +32,7 @@ const NaturalStone = () => {
           <div className="absolute inset-0 z-0">
             <img
               src="/lovable-uploads/b2b0388e-d34b-4577-8444-a5f7bacd095d.png"
-              alt="Luxury kitchen with marble-look stone flooring, modern gray cabinets, and white countertops"
+              alt="Luxury Vancouver WA kitchen featuring marble stone flooring, modern gray cabinets, and white countertops - premium natural stone installation by local experts"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
@@ -26,10 +40,10 @@ const NaturalStone = () => {
           <div className="container-custom relative z-10 text-white">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                Timeless Natural Stone Flooring
+                Premium Natural Stone for Vancouver Homes
               </h1>
               <p className="text-lg sm:text-xl mb-8 text-white/90">
-                Elevate your space with the elegance of natural stone
+                Elevate your Clark County space with the elegance of natural stone
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
                 Get Your Free Quote
@@ -68,11 +82,11 @@ const NaturalStone = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="section-padding">
+        <section className="section-padding" id="stone-benefits">
           <div className="container-custom">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-up">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Choose Natural Stone?</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Choose Natural Stone in Vancouver, WA?</h2>
                 <div className="space-y-6">
                   {benefits.map((benefit, index) => (
                     <div key={index} className="flex gap-4">
@@ -88,7 +102,7 @@ const NaturalStone = () => {
               <div className="relative h-[500px] animate-fade-up rounded-lg overflow-hidden">
                 <img
                   src="/lovable-uploads/cebd4a71-d60b-42c1-9a4a-d7534b7d5645.png"
-                  alt="Elegant white marble stone tiles with natural veining patterns and textured surface"
+                  alt="Elegant white marble stone tiles with natural veining patterns and textured surface - perfect for luxury Vancouver WA homes and businesses"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -97,12 +111,12 @@ const NaturalStone = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-wood-100">
+        <section className="section-padding bg-wood-100" id="contact">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Space?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Vancouver Space?</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Get a free, no-obligation quote for your natural stone project today.
+                Get a free, no-obligation quote for your natural stone project today. Serving all of Clark County including Vancouver, Ridgefield, and Battle Ground.
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
                 Request Free Quote <ArrowRight className="ml-2" />

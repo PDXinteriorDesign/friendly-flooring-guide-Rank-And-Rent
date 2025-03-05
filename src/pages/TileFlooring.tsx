@@ -1,16 +1,30 @@
+
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import ServiceSchema from "@/components/ServiceSchema";
+import CanonicalTag from "@/components/CanonicalTag";
 
 const TileFlooring = () => {
   return (
     <>
       <Helmet>
-        <title>Tile Flooring Installation Vancouver WA | Professional Tile Services</title>
-        <meta name="description" content="Expert tile flooring installation in Vancouver WA. Ceramic, porcelain, and designer tiles for kitchens, bathrooms, and commercial spaces. Get free installation quotes!" />
-        <meta name="keywords" content="tile flooring Vancouver WA, ceramic tile installation, porcelain tile, bathroom tiles, kitchen tile flooring" />
+        <title>Tile Flooring Installation Vancouver WA | Professional Ceramic & Porcelain Services</title>
+        <meta name="description" content="Expert tile flooring installation in Vancouver WA. Ceramic, porcelain, and designer tiles for kitchens, bathrooms, and commercial spaces. Local tile installers with 15+ years experience. Free quotes!" />
+        <meta name="keywords" content="tile flooring Vancouver WA, ceramic tile installation, porcelain tile Vancouver, bathroom tiles, kitchen tile flooring, Vancouver WA tile contractor, tile installation near me" />
+        <meta name="geo.region" content="US-WA" />
+        <meta name="geo.placename" content="Vancouver" />
       </Helmet>
+      
+      <ServiceSchema 
+        name="Tile Flooring Installation Vancouver WA"
+        description="Professional tile installation services for Vancouver WA homes and businesses. Expert installation of ceramic, porcelain, and designer tiles with free quotes and guaranteed craftsmanship."
+        image="/lovable-uploads/8cca6a29-110d-47c4-a035-2befcffc5b02.png"
+        url="https://floorvancouver.com/tile-flooring-vancouver-wa"
+      />
+      
+      <CanonicalTag url="https://floorvancouver.com/tile-flooring-vancouver-wa" />
 
       <div className="min-h-screen">
         {/* Hero Section */}
@@ -18,7 +32,7 @@ const TileFlooring = () => {
           <div className="absolute inset-0 z-0">
             <img
               src="/lovable-uploads/8cca6a29-110d-47c4-a035-2befcffc5b02.png"
-              alt="Modern kitchen with elegant tile flooring, white cabinets, and granite countertops"
+              alt="Modern kitchen with elegant tile flooring in Vancouver WA, featuring white cabinets, granite countertops and professionally installed ceramic tile"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
@@ -26,25 +40,25 @@ const TileFlooring = () => {
           <div className="container-custom relative z-10 text-white">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                Expert Tile Flooring Installation
+                Vancouver WA Tile Flooring Experts
               </h1>
               <p className="text-lg sm:text-xl mb-8 text-white/90">
-                Beautiful, durable tile solutions for any space
+                Beautiful, durable tile solutions for any Clark County space
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
-                Get Your Free Quote
+                Get Your Free Vancouver Quote
               </Button>
             </div>
           </div>
         </section>
 
         {/* Services Section */}
-        <section className="section-padding bg-earth-100">
+        <section className="section-padding bg-earth-100" id="tile-services">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Our Tile Services</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Vancouver Tile Installation Services</h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive tile installation and maintenance services
+                Comprehensive tile installation and maintenance services for Vancouver and Clark County homes
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -97,15 +111,15 @@ const TileFlooring = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-wood-100">
+        <section className="section-padding bg-wood-100" id="contact">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Space?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Vancouver Home?</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Get a free, no-obligation quote for your tile flooring project today.
+                Get a free, no-obligation quote for your tile flooring project today. Serving Vancouver, Ridgefield, Salmon Creek, and all of Clark County.
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
-                Request Free Quote <ArrowRight className="ml-2" />
+                Request Free Vancouver Quote <ArrowRight className="ml-2" />
               </Button>
             </div>
           </div>

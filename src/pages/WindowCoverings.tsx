@@ -1,16 +1,30 @@
+
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import ServiceSchema from "@/components/ServiceSchema";
+import CanonicalTag from "@/components/CanonicalTag";
 
 const WindowCoverings = () => {
   return (
     <>
       <Helmet>
-        <title>Window Coverings Vancouver WA | Blinds, Shades & Custom Solutions</title>
-        <meta name="description" content="Professional window covering solutions in Vancouver WA. Custom blinds, shades, and drapes for homes and businesses. Energy-efficient and stylish options available." />
-        <meta name="keywords" content="window coverings Vancouver WA, blinds installation, custom shades, window treatments, commercial window coverings" />
+        <title>Window Coverings Vancouver WA | Blinds, Shades & Custom Window Treatments</title>
+        <meta name="description" content="Professional window covering solutions in Vancouver WA. Local experts installing custom blinds, shades, and drapes for homes and businesses since 2005. Energy-efficient and stylish options available. Free in-home consultations." />
+        <meta name="keywords" content="window coverings Vancouver WA, blinds installation Clark County, custom shades Vancouver, window treatments, commercial window coverings, motorized blinds Vancouver WA" />
+        <meta name="geo.region" content="US-WA" />
+        <meta name="geo.placename" content="Vancouver" />
       </Helmet>
+      
+      <ServiceSchema 
+        name="Window Coverings and Treatments Vancouver WA"
+        description="Professional window covering services in Vancouver WA. Custom blinds, shades, drapes and motorized solutions with expert measurement and installation."
+        image="/lovable-uploads/733e92bb-54e7-4de6-b1f8-431bb475f857.png"
+        url="https://floorvancouver.com/window-coverings-vancouver-wa"
+      />
+      
+      <CanonicalTag url="https://floorvancouver.com/window-coverings-vancouver-wa" />
 
       <div className="min-h-screen">
         {/* Hero Section */}
@@ -18,7 +32,7 @@ const WindowCoverings = () => {
           <div className="absolute inset-0 z-0">
             <img
               src="/lovable-uploads/733e92bb-54e7-4de6-b1f8-431bb475f857.png"
-              alt="Elegant dining room showcasing custom window treatments with white sheer curtains, coffered ceiling, and hardwood flooring in Vancouver WA"
+              alt="Elegant Vancouver WA dining room showcasing custom window treatments with white sheer curtains, coffered ceiling, and hardwood flooring - professionally installed by local window covering experts"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40" />
@@ -26,25 +40,25 @@ const WindowCoverings = () => {
           <div className="container-custom relative z-10 text-white">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                Custom Window Covering Solutions
+                Vancouver's Window Covering Specialists
               </h1>
               <p className="text-lg sm:text-xl mb-8 text-white/90">
-                Transform your windows with style and functionality
+                Transform your Clark County windows with style and functionality
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
-                Get Your Free Quote
+                Schedule Free In-Home Consultation
               </Button>
             </div>
           </div>
         </section>
 
         {/* Services Section */}
-        <section className="section-padding bg-earth-100">
+        <section className="section-padding bg-earth-100" id="window-services">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Our Window Covering Services</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Vancouver WA Window Covering Services</h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive window treatment solutions for every need
+                Comprehensive window treatment solutions for every Clark County home
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -97,15 +111,15 @@ const WindowCoverings = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-wood-100">
+        <section className="section-padding bg-wood-100" id="contact">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Windows?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Vancouver Windows?</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Get a free, no-obligation quote for your window covering project today.
+                Get a free, no-obligation quote for your window covering project today. Proudly serving Vancouver, Battle Ground, Camas, and all of Clark County.
               </p>
               <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
-                Request Free Quote <ArrowRight className="ml-2" />
+                Request Free In-Home Consultation <ArrowRight className="ml-2" />
               </Button>
             </div>
           </div>

@@ -1,3 +1,4 @@
+
 import { MapPin, Phone, Mail, CheckCircle2, Star, Ruler, Shield, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -9,15 +10,30 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import FAQSchema from "@/components/FAQSchema";
+import CanonicalTag from "@/components/CanonicalTag";
 
 const Index = () => {
   return (
     <>
       <Helmet>
         <title>Flooring Vancouver WA | Top-Rated Flooring Installation Services</title>
-        <meta name="description" content="Expert flooring installation in Vancouver, WA. Family-owned, locally operated flooring company offering hardwood, vinyl, laminate, and carpet installation. Free quotes!" />
-        <meta name="keywords" content="flooring Vancouver WA, hardwood flooring Vancouver, vinyl flooring installation, laminate flooring Vancouver, carpet installation Vancouver WA" />
+        <meta name="description" content="Expert flooring installation in Vancouver, WA. Family-owned flooring company serving Clark County since 2005. Hardwood, vinyl, laminate, carpet & tile. Free quotes!" />
+        <meta name="keywords" content="flooring Vancouver WA, hardwood flooring Vancouver, vinyl flooring installation, laminate flooring Vancouver, carpet installation Vancouver WA, tile flooring, local flooring company" />
+        <meta name="geo.region" content="US-WA" />
+        <meta name="geo.placename" content="Vancouver" />
       </Helmet>
+      
+      <LocalBusinessSchema 
+        name="FloorVancouver" 
+        description="Family-owned flooring company in Vancouver, WA providing expert installation of hardwood, vinyl, laminate, carpet, and tile flooring with free estimates."
+        sameAs={["https://facebook.com/floorvancouver", "https://instagram.com/floorvancouver"]}
+      />
+      
+      <FAQSchema faqs={faqs} />
+      
+      <CanonicalTag url="https://floorvancouver.com" />
 
       <div className="min-h-screen">
         {/* Hero Section */}
@@ -82,9 +98,9 @@ const Index = () => {
         <section className="section-padding bg-white">
           <div className="container-custom">
             <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Expert Flooring Services in Vancouver</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Expert Flooring Services in Vancouver, WA</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive flooring solutions for homes and businesses throughout Clark County
+                Comprehensive flooring solutions for homes and businesses throughout Clark County since 2005
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -131,12 +147,12 @@ const Index = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-white" id="faqs">
           <div className="container-custom">
             <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">Frequently Asked Questions About Flooring in Vancouver</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Get answers to common questions about our flooring services in Vancouver, WA
+                Get answers to common questions about our flooring services in Vancouver, WA and surrounding areas
               </p>
             </div>
             
@@ -154,12 +170,12 @@ const Index = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="section-padding bg-primary/5">
+        <section className="section-padding bg-primary/5" id="contact">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Contact Vancouver's Trusted Flooring Experts</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Contact us today for a free consultation and quote. We serve Vancouver, WA and surrounding areas.
+                Contact us today for a free consultation and quote. We serve Vancouver, WA and surrounding areas including Ridgefield, Salmon Creek, and Battle Ground.
               </p>
               <div className="grid sm:grid-cols-3 gap-6 mb-8">
                 <a href="tel:+1234567890" className="flex flex-col items-center p-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
@@ -228,36 +244,36 @@ const benefits = [
 
 const faqs = [
   {
-    question: "How long does flooring installation typically take?",
-    answer: "Installation time varies depending on the type of flooring and room size. A standard room (250-300 sq ft) typically takes 1-2 days for hardwood, 1 day for vinyl, and 1 day for carpet installation. We'll provide a specific timeline during your consultation."
+    question: "How long does flooring installation typically take in Vancouver homes?",
+    answer: "Installation time varies depending on the type of flooring and room size. A standard room (250-300 sq ft) typically takes 1-2 days for hardwood, 1 day for vinyl, and 1 day for carpet installation in Vancouver homes. We'll provide a specific timeline during your consultation based on your Clark County property's needs."
   },
   {
-    question: "Do you offer free estimates?",
-    answer: "Yes! We provide free, no-obligation estimates for all our flooring services in Vancouver, WA and surrounding areas. Our expert will measure your space, discuss your preferences, and provide a detailed quote."
+    question: "Do you offer free estimates for Vancouver WA homeowners?",
+    answer: "Yes! We provide free, no-obligation estimates for all our flooring services in Vancouver, WA and surrounding areas including Ridgefield, Salmon Creek, Battle Ground, and all of Clark County. Our expert will measure your space, discuss your preferences, and provide a detailed quote."
   },
   {
-    question: "What brands of flooring do you carry?",
-    answer: "We work with top industry manufacturers to provide high-quality flooring options including Shaw, Mohawk, Armstrong, and many others. We can help you select the best product that fits your style and budget."
+    question: "What brands of flooring do you carry for Vancouver customers?",
+    answer: "We work with top industry manufacturers to provide high-quality flooring options including Shaw, Mohawk, Armstrong, and many others specifically selected for Pacific Northwest homes. We can help you select the best product that fits your Vancouver home's style and budget."
   },
   {
-    question: "Do you handle furniture moving during installation?",
-    answer: "Yes, we offer furniture moving services as part of our installation process. Our team will carefully move your furniture before installation and return it afterward. Heavy or specialty items may require additional arrangements."
+    question: "Do you handle furniture moving during installation in Vancouver homes?",
+    answer: "Yes, we offer furniture moving services as part of our installation process for Vancouver homeowners. Our team will carefully move your furniture before installation and return it afterward. Heavy or specialty items may require additional arrangements."
   },
   {
-    question: "What kind of warranty do you offer?",
-    answer: "We offer manufacturer warranties on all products plus our own labor warranty. Specific warranty terms vary by product, but typically range from 15-25 years for materials and 2 years for installation labor."
+    question: "What kind of warranty do you offer for flooring in Vancouver WA?",
+    answer: "We offer manufacturer warranties on all products plus our own labor warranty for all Vancouver installations. Specific warranty terms vary by product, but typically range from 15-25 years for materials and 2 years for installation labor. All warranties are fully documented for your peace of mind."
   },
   {
-    question: "How should I prepare my home for installation?",
-    answer: "Remove small items and valuables from the installation area, ensure clear access to the space, and maintain room temperature between 65-75°F for 48 hours before installation. We'll provide detailed preparation instructions before your installation date."
+    question: "How should I prepare my Vancouver home for flooring installation?",
+    answer: "Remove small items and valuables from the installation area, ensure clear access to the space, and maintain room temperature between 65-75°F for 48 hours before installation. We'll provide detailed preparation instructions specific to your Vancouver home before your installation date."
   },
   {
-    question: "Do you offer financing options?",
-    answer: "Yes, we offer various financing options to help make your flooring project affordable. We work with several financing partners and can help you find the best payment plan for your budget."
+    question: "Do you offer financing options for Vancouver homeowners?",
+    answer: "Yes, we offer various financing options to help make your flooring project affordable for Vancouver residents. We work with several financing partners and can help you find the best payment plan for your budget, with options specifically designed for Washington state homeowners."
   },
   {
-    question: "How soon can you start my project?",
-    answer: "Typically, we can schedule your installation within 1-2 weeks after your product selection and measurement appointment. Emergency services may be available for urgent situations."
+    question: "How soon can you start my flooring project in Vancouver?",
+    answer: "Typically, we can schedule your installation within 1-2 weeks after your product selection and measurement appointment for most Vancouver and Clark County locations. Emergency services may be available for urgent situations for local residents."
   }
 ];
 
