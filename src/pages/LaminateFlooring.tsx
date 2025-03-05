@@ -1,9 +1,12 @@
+
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 const LaminateFlooring = () => {
+  const hubspotFormUrl = "https://share-na2.hsforms.com/2ViHNhP0VREeNbPXGDMdneQ401s19";
+  
   return (
     <>
       <Helmet>
@@ -31,7 +34,11 @@ const LaminateFlooring = () => {
               <p className="text-lg sm:text-xl mb-8 text-white/90">
                 Beautiful, durable, and affordable flooring options for every space
               </p>
-              <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+              <Button 
+                size="lg" 
+                className="bg-wood-500 hover:bg-wood-600 text-white"
+                onClick={() => window.open(hubspotFormUrl, '_blank')}
+              >
                 Get Your Free Quote
               </Button>
             </div>
@@ -104,7 +111,11 @@ const LaminateFlooring = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 Get a free, no-obligation quote for your laminate flooring project today.
               </p>
-              <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+              <Button 
+                size="lg" 
+                className="bg-wood-500 hover:bg-wood-600 text-white"
+                onClick={() => window.open(hubspotFormUrl, '_blank')}
+              >
                 Request Free Quote <ArrowRight className="ml-2" />
               </Button>
             </div>

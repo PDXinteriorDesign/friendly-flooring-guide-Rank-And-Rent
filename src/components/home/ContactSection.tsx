@@ -1,9 +1,10 @@
 
 import { MapPin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import QuoteFormModal from "./QuoteFormModal";
 
 export const ContactSection = () => {
+  const hubspotFormUrl = "https://share-na2.hsforms.com/2ViHNhP0VREeNbPXGDMdneQ401s19";
+  
   return (
     <section className="section-padding bg-primary/5" id="contact">
       <div className="container-custom">
@@ -17,7 +18,13 @@ export const ContactSection = () => {
             <span className="font-semibold">Email Us</span>
             <span className="text-sm opacity-90">flooringquotesvancouver@gmail.com</span>
           </div>
-          <QuoteFormModal buttonText="Request a Quote" />
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-white"
+            onClick={() => window.open(hubspotFormUrl, '_blank')}
+          >
+            Request a Quote
+          </Button>
         </div>
       </div>
     </section>

@@ -6,6 +6,8 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CarpetFlooring = () => {
+  const hubspotFormUrl = "https://share-na2.hsforms.com/2ViHNhP0VREeNbPXGDMdneQ401s19";
+  
   return (
     <>
       <Helmet>
@@ -33,7 +35,11 @@ const CarpetFlooring = () => {
               <p className="text-lg sm:text-xl mb-8 text-white/90">
                 Transform your space with premium carpet solutions and professional installation
               </p>
-              <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+              <Button 
+                size="lg" 
+                className="bg-wood-500 hover:bg-wood-600 text-white"
+                onClick={() => window.open(hubspotFormUrl, '_blank')}
+              >
                 Get Your Free Quote
               </Button>
             </div>
@@ -147,7 +153,11 @@ const CarpetFlooring = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 Get a free, no-obligation quote for your carpet installation project today.
               </p>
-              <Button size="lg" className="bg-wood-500 hover:bg-wood-600 text-white">
+              <Button 
+                size="lg" 
+                className="bg-wood-500 hover:bg-wood-600 text-white"
+                onClick={() => window.open(hubspotFormUrl, '_blank')}
+              >
                 Request Free Quote <ArrowRight className="ml-2" />
               </Button>
             </div>

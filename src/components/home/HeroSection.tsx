@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import QuoteFormModal from "./QuoteFormModal";
 
 export const HeroSection = () => {
+  const hubspotFormUrl = "https://share-na2.hsforms.com/2ViHNhP0VREeNbPXGDMdneQ401s19";
+  
   return (
     <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -23,13 +25,13 @@ export const HeroSection = () => {
             Professional flooring installation, competitive pricing, and exceptional service
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <QuoteFormModal 
-              trigger={
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                  Get Your Free Quote
-                </Button>
-              }
-            />
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-white"
+              onClick={() => window.open(hubspotFormUrl, '_blank')}
+            >
+              Get Your Free Quote
+            </Button>
             <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white">
               View Our Work
             </Button>
