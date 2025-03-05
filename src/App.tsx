@@ -1,4 +1,5 @@
 
+import { Suspense, lazy, ErrorBoundary } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -21,7 +22,50 @@ import NotFound from "./pages/NotFound";
 import { Helmet } from "react-helmet";
 import "./index.css"; // Ensure CSS is properly imported
 
-const queryClient = new QueryClient();
+// Create a fallback component for error cases
+const ErrorFallback = () => (
+  <div className="min-h-screen flex items-center justify-center p-4 bg-gray-50">
+    <div className="text-center max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+      <h2 className="text-xl font-bold text-gray-800 mb-4">Something went wrong</h2>
+      <p className="text-gray-600 mb-4">We're experiencing some technical difficulties. Please try refreshing the page.</p>
+      <button 
+        onClick={() => window.location.reload()} 
+        className="px-4 py-2 bg-primary text-white rounded hover:bg-primary/90"
+      >
+        Refresh Page
+      </button>
+    </div>
+  </div>
+);
+
+// Custom error boundary class
+class AppErrorBoundary extends React.Component {
+  state = { hasError: false };
+  
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  
+  componentDidCatch(error, info) {
+    console.error("App error:", error, info);
+  }
+  
+  render() {
+    if (this.state.hasError) {
+      return <ErrorFallback />;
+    }
+    return this.props.children;
+  }
+}
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 1,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -35,24 +79,26 @@ const App = () => (
       </Helmet>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <MainNav />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/hardwood-flooring-vancouver-wa" element={<HardwoodFlooring />} />
-          <Route path="/vinyl-flooring-vancouver-wa" element={<VinylFlooring />} />
-          <Route path="/carpet-installation-vancouver-wa" element={<CarpetFlooring />} />
-          <Route path="/laminate-flooring-vancouver-wa" element={<LaminateFlooring />} />
-          <Route path="/tile-flooring-vancouver-wa" element={<TileFlooring />} />
-          <Route path="/natural-stone-vancouver-wa" element={<NaturalStone />} />
-          <Route path="/window-coverings-vancouver-wa" element={<WindowCoverings />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <AppErrorBoundary>
+        <BrowserRouter>
+          <ScrollToTop />
+          <MainNav />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/hardwood-flooring-vancouver-wa" element={<HardwoodFlooring />} />
+            <Route path="/vinyl-flooring-vancouver-wa" element={<VinylFlooring />} />
+            <Route path="/carpet-installation-vancouver-wa" element={<CarpetFlooring />} />
+            <Route path="/laminate-flooring-vancouver-wa" element={<LaminateFlooring />} />
+            <Route path="/tile-flooring-vancouver-wa" element={<TileFlooring />} />
+            <Route path="/natural-stone-vancouver-wa" element={<NaturalStone />} />
+            <Route path="/window-coverings-vancouver-wa" element={<WindowCoverings />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </AppErrorBoundary>
     </TooltipProvider>
   </QueryClientProvider>
 );
