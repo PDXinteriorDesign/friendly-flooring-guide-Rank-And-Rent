@@ -1,9 +1,10 @@
+
 export const post = {
   slug: "vinyl-plank-flooring-installation-guide",
   title: "How to Install Vinyl Plank Flooring – A Step-by-Step Guide",
   excerpt: "Learn how to install vinyl plank flooring like a pro with our comprehensive DIY guide. From preparation to finishing touches, we cover everything you need to know.",
   date: "March 1, 2024",
-  image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+  image: "/lovable-uploads/b833ef0e-8f5b-4bbe-abd8-8933d6563aa9.png",
   content: `
       <h2>Can You Install Vinyl Plank Flooring Yourself?</h2>
       <p>Absolutely! While our <a href="/vinyl-flooring-vancouver-wa">professional vinyl flooring installation</a> services are available, vinyl plank flooring (LVP) installation is one of the most accessible DIY projects for homeowners.</p>
