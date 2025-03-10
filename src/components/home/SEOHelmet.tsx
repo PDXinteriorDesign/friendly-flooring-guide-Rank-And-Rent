@@ -23,14 +23,14 @@ export const SEOHelmet = ({ faqs }: SEOHelmetProps) => {
       </Helmet>
       
       <LocalBusinessSchema 
-        name="FloorVancouver" 
+        name="FlooringQuotesVancouver" 
         description="Family-owned flooring company in Vancouver, WA providing expert installation of hardwood, vinyl, laminate, carpet, and tile flooring with free estimates."
-        sameAs={["https://facebook.com/floorvancouver", "https://instagram.com/floorvancouver"]}
+        sameAs={["https://facebook.com/flooringquotesvancouver", "https://instagram.com/flooringquotesvancouver"]}
       />
       
       <FAQSchema faqs={faqs} />
       
-      <CanonicalTag url="https://floorvancouver.com" />
+      <CanonicalTag url="https://flooringquotesvancouver.com" />
     </>
   );
 };
