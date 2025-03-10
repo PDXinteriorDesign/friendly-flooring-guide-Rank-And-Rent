@@ -3,4 +3,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://flooringquotesvancouver.com/sitemap.xml
-
