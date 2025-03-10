@@ -1,7 +1,8 @@
+
 import { Suspense, lazy } from "react";
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
+import { SonnerToaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -79,7 +80,7 @@ const App = () => (
         <link rel="alternate" href="https://floorvancouver.com" hrefLang="en-us" />
       </Helmet>
       <Toaster />
-      <Sonner />
+      <SonnerToaster />
       <ReactErrorBoundary FallbackComponent={ErrorFallback}>
         <BrowserRouter>
           <ScrollToTop />

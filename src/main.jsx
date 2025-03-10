@@ -1,6 +1,9 @@
 
-// This file is a JavaScript module that imports the TypeScript main file
-// This helps bypass MIME type issues in some development environments
-import './main.tsx';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './index.css';
 
-console.log("main.jsx loaded, importing main.tsx");
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(<App />);

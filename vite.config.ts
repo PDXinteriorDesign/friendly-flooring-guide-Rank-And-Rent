@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          // Remove the problematic UI components chunk that was causing the directory import issue
+          // No problematic UI components chunk
         }
       }
     }
