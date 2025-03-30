@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { Layers, Grid, Mountain, Blinds, MapPin, Sandwatch } from "lucide-react";
+import { Layers, Grid, Mountain, Blinds, MapPin, Hourglass } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const MainNav = () => {
@@ -73,7 +73,7 @@ const MainNav = () => {
                     </Link>
                     <Link to="/floor-refinishing-vancouver-wa" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
                       <div className="flex items-center gap-2 font-medium">
-                        <Sandwatch className="w-4 h-4" />
+                        <Hourglass className="w-4 h-4" />
                         Floor Refinishing
                       </div>
                       <p className="text-sm text-muted-foreground">Revitalize your existing hardwood floors</p>
