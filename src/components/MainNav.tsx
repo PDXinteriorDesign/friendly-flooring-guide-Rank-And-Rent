@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -7,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { Layers, Grid, Mountain, Blinds } from "lucide-react";
+import { Layers, Grid, Mountain, Blinds, MapPin, Sandwatch } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const MainNav = () => {
@@ -70,6 +71,13 @@ const MainNav = () => {
                       </div>
                       <p className="text-sm text-muted-foreground">Custom tile installation for any space</p>
                     </Link>
+                    <Link to="/floor-refinishing-vancouver-wa" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
+                      <div className="flex items-center gap-2 font-medium">
+                        <Sandwatch className="w-4 h-4" />
+                        Floor Refinishing
+                      </div>
+                      <p className="text-sm text-muted-foreground">Revitalize your existing hardwood floors</p>
+                    </Link>
                     <Link to="/natural-stone-vancouver-wa" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
                       <div className="flex items-center gap-2 font-medium">
                         <Mountain className="w-4 h-4" />
@@ -83,6 +91,37 @@ const MainNav = () => {
                         Window Coverings
                       </div>
                       <p className="text-sm text-muted-foreground">Custom window treatment solutions</p>
+                    </Link>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="px-2 sm:px-4 bg-primary text-white hover:bg-primary/90 focus:bg-primary/90">Locations</NavigationMenuTrigger>
+                <NavigationMenuContent className="bg-white shadow-lg">
+                  <div className="grid gap-3 p-4 w-[280px]">
+                    <Link to="/" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
+                      <div className="flex items-center gap-2 font-medium">
+                        <MapPin className="w-4 h-4" />
+                        Vancouver, WA
+                      </div>
+                      <p className="text-sm text-muted-foreground">Our main service area</p>
+                    </Link>
+                    <Link to="/locations/camas" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
+                      <div className="font-medium">Camas, WA</div>
+                      <p className="text-sm text-muted-foreground">Flooring services in Camas</p>
+                    </Link>
+                    <Link to="/locations/battle-ground" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
+                      <div className="font-medium">Battle Ground, WA</div>
+                      <p className="text-sm text-muted-foreground">Flooring services in Battle Ground</p>
+                    </Link>
+                    <Link to="/locations/ridgefield" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
+                      <div className="font-medium">Ridgefield, WA</div>
+                      <p className="text-sm text-muted-foreground">Flooring services in Ridgefield</p>
+                    </Link>
+                    <Link to="/locations/washougal" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
+                      <div className="font-medium">Washougal, WA</div>
+                      <p className="text-sm text-muted-foreground">Flooring services in Washougal</p>
                     </Link>
                   </div>
                 </NavigationMenuContent>

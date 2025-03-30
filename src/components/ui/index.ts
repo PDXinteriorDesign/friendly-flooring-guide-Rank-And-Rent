@@ -43,8 +43,8 @@ export * from "./table";
 export * from "./tabs";
 export * from "./textarea";
 export * from "./toast";
-// Export only one Toaster (from toast.tsx)
-export { Toaster as SonnerToaster } from "./sonner";
+// Export SonnerToaster from sonner.tsx
+export { SonnerToaster } from "./sonner";
 export * from "./toggle";
 export * from "./toggle-group";
 export * from "./tooltip";

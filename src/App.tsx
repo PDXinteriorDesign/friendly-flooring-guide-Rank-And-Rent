@@ -14,12 +14,17 @@ import VinylFlooring from "./pages/VinylFlooring";
 import CarpetFlooring from "./pages/CarpetFlooring";
 import LaminateFlooring from "./pages/LaminateFlooring";
 import TileFlooring from "./pages/TileFlooring";
+import FloorRefinishing from "./pages/FloorRefinishing";
 import NaturalStone from "./pages/NaturalStone";
 import WindowCoverings from "./pages/WindowCoverings";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
+import CamasPage from "./pages/locations/Camas";
+import BattleGroundPage from "./pages/locations/BattleGround";
+import RidgefieldPage from "./pages/locations/Ridgefield";
+import WashougalPage from "./pages/locations/Washougal";
 import { Helmet } from "react-helmet";
 import "./index.css"; // Ensure CSS is properly imported
 
@@ -74,9 +79,9 @@ const App = () => (
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#4f46e5" />
-        <meta property="og:site_name" content="FloorVancouver - Vancouver WA Flooring Experts" />
+        <meta property="og:site_name" content="FlooringQuotesVancouver - Vancouver WA Flooring Experts" />
         <meta property="og:type" content="website" />
-        <link rel="alternate" href="https://floorvancouver.com" hrefLang="en-us" />
+        <link rel="alternate" href="https://flooringquotesvancouver.com" hrefLang="en-us" />
       </Helmet>
       <Toaster />
       <SonnerToaster />
@@ -91,8 +96,13 @@ const App = () => (
             <Route path="/carpet-installation-vancouver-wa" element={<CarpetFlooring />} />
             <Route path="/laminate-flooring-vancouver-wa" element={<LaminateFlooring />} />
             <Route path="/tile-flooring-vancouver-wa" element={<TileFlooring />} />
+            <Route path="/floor-refinishing-vancouver-wa" element={<FloorRefinishing />} />
             <Route path="/natural-stone-vancouver-wa" element={<NaturalStone />} />
             <Route path="/window-coverings-vancouver-wa" element={<WindowCoverings />} />
+            <Route path="/locations/camas" element={<CamasPage />} />
+            <Route path="/locations/battle-ground" element={<BattleGroundPage />} />
+            <Route path="/locations/ridgefield" element={<RidgefieldPage />} />
+            <Route path="/locations/washougal" element={<WashougalPage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/resources" element={<Resources />} />

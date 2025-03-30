@@ -1,10 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import QuoteFormModal from "./QuoteFormModal";
+import { Phone } from "lucide-react";
 
 export const HeroSection = () => {
   const hubspotFormUrl = "https://share-na2.hsforms.com/2ViHNhP0VREeNbPXGDMdneQ401s19";
+  const phoneNumber = "(360) 555-1234"; // Replace with actual phone number
   
   return (
     <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -19,10 +20,10 @@ export const HeroSection = () => {
       <div className="container-custom relative z-10 text-white">
         <div className="max-w-3xl mx-auto text-center animate-fade-up">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Vancouver's Trusted Flooring Experts
+            Top-Rated Flooring Installers in Vancouver, WA
           </h1>
           <p className="text-lg sm:text-xl mb-8 text-white/90">
-            Professional flooring installation, competitive pricing, and exceptional service
+            Professional flooring installation, competitive pricing, and exceptional service throughout Clark County
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -32,11 +33,26 @@ export const HeroSection = () => {
             >
               Get Your Free Quote
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white">
-              View Our Work
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-white/10 hover:bg-white/20 text-white border-white flex items-center gap-2"
+              onClick={() => window.location.href = `tel:${phoneNumber.replace(/\D/g, '')}`}
+            >
+              <Phone className="w-5 h-5" />
+              {phoneNumber}
             </Button>
           </div>
         </div>
+      </div>
+      <div className="fixed bottom-4 right-4 z-50 md:hidden">
+        <Button
+          size="lg"
+          className="bg-primary hover:bg-primary/90 text-white rounded-full shadow-lg"
+          onClick={() => window.open(hubspotFormUrl, '_blank')}
+        >
+          Get a Quote
+        </Button>
       </div>
     </section>
   );

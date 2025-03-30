@@ -1,3 +1,5 @@
 
-# Handle SPA routing - redirect all paths to index.html
+# Netlify redirects for single page applications
+# This ensures that all routes are handled by the React router instead of returning 404s
+
 /*    /index.html   200

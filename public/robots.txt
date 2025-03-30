@@ -2,4 +2,23 @@
 User-agent: *
 Allow: /
 
+# Main pages - allow all
+Allow: /hardwood-flooring-vancouver-wa
+Allow: /vinyl-flooring-vancouver-wa
+Allow: /carpet-installation-vancouver-wa
+Allow: /laminate-flooring-vancouver-wa
+Allow: /tile-flooring-vancouver-wa
+Allow: /floor-refinishing-vancouver-wa
+Allow: /natural-stone-vancouver-wa
+Allow: /window-coverings-vancouver-wa
+
+# Location pages - allow all
+Allow: /locations/camas
+Allow: /locations/battle-ground
+Allow: /locations/ridgefield
+Allow: /locations/washougal
+
+# If you need to noindex any thin pages temporarily, uncomment lines below
+# Disallow: /your-thin-page-url
+
 Sitemap: https://flooringquotesvancouver.com/sitemap.xml
