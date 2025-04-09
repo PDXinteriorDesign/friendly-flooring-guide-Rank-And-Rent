@@ -7,12 +7,26 @@ import { post as glueVsClick } from './blog-posts/glue-down-vs-click-lock-vinyl-
 import { post as isVinylWaterproof } from './blog-posts/is-vinyl-waterproof';
 import { post as vinylVsLaminate } from './blog-posts/vinyl-vs-laminate';
 
+// Normalize blog posts to ensure consistent properties
+const normalizePost = (post: any) => {
+  // If post has description but not excerpt, use description as excerpt
+  if (post.description && !post.excerpt) {
+    post.excerpt = post.description;
+  }
+  // If post has excerpt but not description, use excerpt as description
+  if (post.excerpt && !post.description) {
+    post.description = post.excerpt;
+  }
+  return post;
+};
+
+// Apply normalization to all posts
 export const blogPosts = [
-  isVinylWaterproof,
-  vinylVsLaminate,
-  waterproofVinyl,
-  highTrafficFlooring,
-  laminateVsVinyl,
-  vinylInstallation,
-  glueVsClick
+  normalizePost(isVinylWaterproof),
+  normalizePost(vinylVsLaminate),
+  normalizePost(waterproofVinyl),
+  normalizePost(highTrafficFlooring),
+  normalizePost(laminateVsVinyl),
+  normalizePost(vinylInstallation),
+  normalizePost(glueVsClick)
 ];

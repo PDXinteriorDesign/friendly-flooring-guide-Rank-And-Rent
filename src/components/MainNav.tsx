@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { Layers, Grid, Mountain, Blinds, MapPin, Hourglass, HomeIcon, Tool } from "lucide-react";
+import { Layers, Grid, Mountain, Blinds, MapPin, Hourglass, HomeIcon, Hammer } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const MainNav = () => {
@@ -47,7 +47,7 @@ const MainNav = () => {
                   )}>
                     <Link to="/flooring-installation-vancouver-wa" className="block p-3 space-y-1 hover:bg-primary/10 rounded-lg">
                       <div className="flex items-center gap-2 font-medium">
-                        <Tool className="w-4 h-4" />
+                        <Hammer className="w-4 h-4" />
                         Flooring Installation
                       </div>
                       <p className="text-sm text-muted-foreground">Professional installation for all flooring types</p>
