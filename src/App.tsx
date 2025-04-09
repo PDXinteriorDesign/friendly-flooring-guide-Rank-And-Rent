@@ -1,3 +1,4 @@
+
 import { Suspense, lazy } from "react";
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
@@ -5,7 +6,7 @@ import { SonnerToaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary"; // Import from react-error-boundary
+import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
 import MainNav from "./components/MainNav";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
@@ -17,6 +18,7 @@ import TileFlooring from "./pages/TileFlooring";
 import FloorRefinishing from "./pages/FloorRefinishing";
 import NaturalStone from "./pages/NaturalStone";
 import WindowCoverings from "./pages/WindowCoverings";
+import FlooringInstallation from "./pages/FlooringInstallation";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Resources from "./pages/Resources";
@@ -26,7 +28,7 @@ import BattleGroundPage from "./pages/locations/BattleGround";
 import RidgefieldPage from "./pages/locations/Ridgefield";
 import WashougalPage from "./pages/locations/Washougal";
 import { Helmet } from "react-helmet";
-import "./index.css"; // Ensure CSS is properly imported
+import "./index.css";
 
 // Create a fallback component for error cases
 const ErrorFallback = () => (
@@ -99,6 +101,7 @@ const App = () => (
             <Route path="/floor-refinishing-vancouver-wa" element={<FloorRefinishing />} />
             <Route path="/natural-stone-vancouver-wa" element={<NaturalStone />} />
             <Route path="/window-coverings-vancouver-wa" element={<WindowCoverings />} />
+            <Route path="/flooring-installation-vancouver-wa" element={<FlooringInstallation />} />
             <Route path="/locations/camas" element={<CamasPage />} />
             <Route path="/locations/battle-ground" element={<BattleGroundPage />} />
             <Route path="/locations/ridgefield" element={<RidgefieldPage />} />

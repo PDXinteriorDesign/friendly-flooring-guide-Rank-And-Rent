@@ -4,8 +4,12 @@ import { post as highTrafficFlooring } from './blog-posts/best-flooring-high-tra
 import { post as laminateVsVinyl } from './blog-posts/laminate-vs-vinyl-flooring-comparison';
 import { post as vinylInstallation } from './blog-posts/vinyl-plank-flooring-installation-guide';
 import { post as glueVsClick } from './blog-posts/glue-down-vs-click-lock-vinyl-flooring';
+import { post as isVinylWaterproof } from './blog-posts/is-vinyl-waterproof';
+import { post as vinylVsLaminate } from './blog-posts/vinyl-vs-laminate';
 
 export const blogPosts = [
+  isVinylWaterproof,
+  vinylVsLaminate,
   waterproofVinyl,
   highTrafficFlooring,
   laminateVsVinyl,

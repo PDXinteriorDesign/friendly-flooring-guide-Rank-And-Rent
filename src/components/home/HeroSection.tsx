@@ -20,10 +20,10 @@ export const HeroSection = () => {
       <div className="container-custom relative z-10 text-white">
         <div className="max-w-3xl mx-auto text-center animate-fade-up">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Top-Rated Flooring Installers in Vancouver, WA
+            Get Flooring Quotes in Vancouver, WA – Fast & Free
           </h1>
           <p className="text-lg sm:text-xl mb-8 text-white/90">
-            Professional flooring installation, competitive pricing, and exceptional service throughout Clark County
+            Compare top-rated flooring options for your home from Vancouver's trusted installers. Free estimates within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -42,6 +42,9 @@ export const HeroSection = () => {
               <Phone className="w-5 h-5" />
               {phoneNumber}
             </Button>
+          </div>
+          <div className="mt-4 text-white/90">
+            Serving Vancouver, Camas, Battle Ground, Ridgefield, & all of Clark County
           </div>
         </div>
       </div>

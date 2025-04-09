@@ -3,3 +3,14 @@
 # This ensures that all routes are handled by the React router instead of returning 404s
 
 /*    /index.html   200
+
+# Redirects for main service pages
+/flooring-installation-vancouver-wa    /flooring-installation-vancouver-wa    200
+/vinyl-flooring-vancouver-wa    /vinyl-flooring-vancouver-wa    200
+/hardwood-flooring-vancouver-wa    /hardwood-flooring-vancouver-wa    200
+/laminate-flooring-vancouver-wa    /laminate-flooring-vancouver-wa    200
+/tile-flooring-vancouver-wa    /tile-flooring-vancouver-wa    200
+
+# Redirects for blog posts
+/blog/is-vinyl-waterproof    /blog/is-vinyl-waterproof    200
+/blog/vinyl-vs-laminate    /blog/vinyl-vs-laminate    200
